@@ -8344,6 +8344,10 @@ fieldset:disabled .btn {
 }
 
 .text-primary {
+    /* color: #1168B3 !important */
+    color: white !important;
+}
+.text-primary-blue{
     color: #1168B3 !important
 }
 .green-font{

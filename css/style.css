@@ -420,8 +420,10 @@ h4, h5, h6, .h4, .h5, .h6 {
 }
 
 .team-item:hover .team-content {
-    background: var(--bs-primary) !important;
-    color: var(--bs-dark) !important;
+   cursor: pointer;
+   /* background: linear-gradient(to right, #00ADBB, #0EB24C);
+   border: 1px solid rgb(118, 233, 118) !important;
+   border-top: none !important; */
 }
 
 .team-item .team-content h4,
@@ -429,12 +431,15 @@ h4, h5, h6, .h4, .h5, .h6 {
     transition: 0.5s;
 }
 
-.team-item:hover .team-content h4 {
-    color: var(--bs-dark) !important;
+.team-item .team-content h4 {
+    background: linear-gradient(to right, #0DB14E, #01AEEF) !important;
+        -webkit-text-fill-color: transparent !important;
+        -webkit-background-clip: text !important;
 }
 
-.team-item:hover .team-content p {
-    color: var(--bs-white);
+.team-item .team-content p {
+    color: #0077df !important;
+    font-weight: 800;
 }
 /*** Team End ***/
 
@@ -469,6 +474,12 @@ h4, h5, h6, .h4, .h5, .h6 {
     color: var(--bs-primary) !important;
 }
 /*** Footer End ***/
+.team-content{
+    /* background: linear-gradient(to right, #0ec6d3, #0fc856); */
+    background: none !important;
+    border: 1px solid rgb(118, 233, 118) !important;
+   border-top: none !important;
+}
 
 
 

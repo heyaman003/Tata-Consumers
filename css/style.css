@@ -177,7 +177,7 @@ h6,
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(212, 167, 98, 0.7);
+    background: rgb(0, 75, 237,0.3);
     border-radius: 8px;
     transition: 0.5s;
     opacity: 0;
@@ -262,13 +262,20 @@ h6,
 /*** Youtube Video start ***/
 .video {
     position: relative;
+    width: 100%;
     height: 100%;
-    min-height: 400px;
-    background: linear-gradient(rgba(254, 218, 154, 0.1), rgba(254, 218, 154, 0.1)), url(../img/fact.jpg);
+    min-height: 500px;
+    background: url(../img/couple.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 8px;
+}
+.video img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+
 }
 
 .video .btn-play {
@@ -522,6 +529,7 @@ h6,
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text; */
 }
+
 .text {
     position: relative;
     font-size: 250px;
@@ -530,6 +538,7 @@ h6,
     -webkit-text-stroke: 3px #01AEEF;
   }
   
+
   .text::before {
     content: attr(data-fill-text);
     position: absolute;
@@ -581,7 +590,75 @@ h6,
     /* display: block; */
     text-align: center
 }
+.about-sec-2{
+    position: relative;
+    font-size: 20px;
+    /* border: 2px solid black; */
+    background-color: rgb(222, 184, 135, 0.1)
+}
+.sec2-lady{
+    z-index: 1;
+}
+.sec2-filler{
+    position: absolute;
+    width: 15%;
+    height: 60%;
+    left: 0;
+    top: 0;
+    margin: 0;
+    background-image: linear-gradient(45deg, #0DB14E, #01AEEF);
+    /* background-color: brown; */
+    /* z-index: 1; */
+}
+.sec2-filler2{
+    position: absolute;
+    width: 20%;
+    height: 40%;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    background-image: linear-gradient(45deg, #0DB14E, #01AEEF);
+    /* background-color: brown; */
+    z-index: 1;
+}
 
+.about-sec2-vals {
+    /* border: 2px solid black; */
+    /* width: fit-content; */
+}
+.about-sec2-vals img{
+    margin: 2%;
+    width: 22%;
+    height: 150px;
+}
+.faqt-item{
+    border: 1.5px solid transparent;
+    border-image: linear-gradient(45deg, transparent 60%, #FBEF10, #0DB14E, #01AEEF);
+    border-image-slice: 1;
+}
+.faqt-item h1{
+    font-size: 34px;
+    background: linear-gradient(to right, #036EB3, #32B5C9);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}   
+.faqt-item img{
+    width: 50%;
+}
+.pro-card{
+    margin: auto;
+    /* border: 2px solid black; */
+}
+.pro-card img{
+    /* width: 500px; */
+}
+.pro-card-wrap{
+    justify-content: center;
+    margin: auto;
+    /* border: 2px solid black; */
+    width: 700px;
+
+}
 /* *********************************** */
 /* Custom CSS End */
 /* *********************************** */

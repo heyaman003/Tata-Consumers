@@ -464,13 +464,13 @@ h6,
 
 /*** testimonial Start ***/
 .testimonial-item {
-    border: 1px solid var(--bs-primary);
+    border: 1px solid rgb(124, 199, 63) ;
     padding: 20px 20px;
 }
 
 .testimonial-carousel .owl-item img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 .testimonial-carousel.owl-rtl .testimonial-item {
@@ -585,3 +585,175 @@ h6,
 /* *********************************** */
 /* Custom CSS End */
 /* *********************************** */
+
+
+.container-team {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width:100vw;
+    gap: 24px;
+    margin: 50px auto;
+    height: 700vh;
+    scroll-behavior: smooth;
+    align-items: center;
+  }
+  
+  .container-team .card-team {
+    width: 90% !important;
+    margin: 0 20px;
+    box-sizing: border-box;
+    min-height: 500px;
+    border-radius: 32px;
+    position: sticky;
+    margin-top: 5%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:50vh;
+    overflow: hidden;
+    color: white;
+    padding: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: linear-gradient(to right, #0DB14E, #01AEEF) !important;
+  }
+  .card-team .img-div{
+    position: sticky !important;
+    top: 10% !important;
+
+  }
+  .descp-team{
+    font-size: 20px;
+   overflow-x: scroll;
+    height: 100%;
+    margin-bottom: 10px !important;
+    padding: 3%;
+}
+.about-text-team h3{
+    font-size: 25px !important;
+    text-align: center;
+}
+.img-div{
+    height: 80%;
+    position: sticky;
+    display: flex;
+    justify-content: center !important;
+    flex-direction: column;
+    align-items: center !important;
+}
+.img-div img{
+   width: 50%;
+   border-radius: 8%;
+}
+.about-text-team{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center ;
+}
+.container-team .card-team::-webkit-scrollbar {
+    display: none;
+}
+.name-team{
+    color: #FFFFFF !important;
+}
+.designation{
+    color: #0067c2;
+    font-weight: 800;
+}
+.link {
+    font-size: 2rem !important;
+    font-weight: bold;
+    color: rgb(40, 222, 58);
+    text-decoration: none;
+    position: relative;
+  }
+  .link span,
+  .link i {
+    position: relative;
+  }
+  .link i {
+    margin-left: 0.5em;
+  }
+  .link .color {
+    width: 2em;
+    height: 2em;
+    border-radius: 2em;
+    background-color: var(--color);
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    left: -0.65em;
+  }
+  .animatedButton{
+    /* margin: 100px auto; */
+    width: 350px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .animatedButton::before {
+    content: attr(content);
+    position: absolute;
+    width: 348px;
+    height: 48px;
+    z-index: 1;
+    background: white;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+  }
+  
+  .animatedButton::after {
+    content: "";
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    border-radius: 50px;
+    background: conic-gradient(
+      #0c8eff 0%30.5%,
+      #edf2f5 30.5%100%
+    );
+    animation: border-animation 5s ease-in-out infinite;
+    -webkit-animation: border-animation 5s ease-in-out infinite;
+  }
+  
+  @keyframes border-animation {
+    from{
+        transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+    }
+  }
+.background-video{
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    z-index: -1;
+   height: 100%;
+   overflow: hidden;
+}
+.background-video video{
+    width: 100vw !important;
+    height: 80%;
+}

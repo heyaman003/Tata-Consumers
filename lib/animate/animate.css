@@ -1,13 +1,5 @@
 @charset "UTF-8";
 
-/*!
- * animate.css -http://daneden.me/animate
- * Version - 3.5.2
- * Licensed under the MIT license - http://opensource.org/licenses/MIT
- *
- * Copyright (c) 2017 Daniel Eden
- */
-
 .animated {
   animation-duration: 1s;
   animation-fill-mode: both;
@@ -224,8 +216,6 @@
   animation-name: tada;
 }
 
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
-
 @keyframes wobble {
   from {
     transform: none;
@@ -343,19 +333,23 @@
 
   0% {
     opacity: 0;
+    /* transform: scale(12) translateX(60%); */
     transform: translate3d(0, -3000px, 0);
   }
 
   60% {
     opacity: 1;
+    /* transform: scale(9) translateX(50%); */
     transform: translate3d(0, 25px, 0);
   }
 
   75% {
+    /* transform: scale(6) translateX(30%); */
     transform: translate3d(0, -10px, 0);
   }
 
   90% {
+    /* transform: scale(3) translateX(20%); */
     transform: translate3d(0, 5px, 0);
   }
 
@@ -363,7 +357,41 @@
     transform: none;
   }
 }
+@keyframes bounceInDownSpc {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
 
+  0% {
+    opacity: 0;
+    transform: scale(12) translateX(-60%);
+    /* transform: translate3d(0, -3000px, 0); */
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale(9) translateX(-50%);
+    /* transform: translate3d(0, 25px, 0); */
+  }
+
+  75% {
+    transform: scale(6) translateX(-30%);
+    /* transform: translate3d(0, -10px, 0); */
+  }
+
+  90% {
+    transform: scale(3) translateX(-20%);
+    /* transform: translate3d(0, 5px, 0); */
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+.bounceInDownspc{
+  animation-name: bounceInDownSpc;
+}
 .bounceInDown {
   animation-name: bounceInDown;
 }
@@ -1245,7 +1273,6 @@
   animation-name: jackInTheBox;
 }
 
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
 @keyframes rollIn {
   from {
@@ -1263,7 +1290,6 @@
   animation-name: rollIn;
 }
 
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
 @keyframes rollOut {
   from {
@@ -1576,4 +1602,37 @@
 
 .slideOutUp {
   animation-name: slideOutUp;
+}
+
+
+@keyframes ScaleInDownTo {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  from {
+    opacity: 0;
+    transform: translate3d(0, 3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, -20px, 0);
+  }
+
+  75% {
+    transform: translate3d(0, 10px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, -5px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.ScaleInDown {
+  animation-name: ScaleInDownTo;
 }

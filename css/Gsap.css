@@ -1,0 +1,486 @@
+:root {
+    --color-bg: #fff;
+    --color-light: #f2f2f2;
+    --color-dark: #111827;
+    --color-dark-brighten: #6b6f78;
+    --color-medium-brighten: #cfd1d4;
+    --color-jordy-blue: #82abd9;
+    --color-transparent: hsla(0, 0%, 100%, 0);
+    --text-color: var(--color-dark);
+    --button-color: #fff;
+    --button-hover-color: var(--color-dark);
+    --button-bg-color: var(--color-dark);
+    --button-bg-hover-color: var(--color-medium-brighten);
+    --swiper-pagination-color: var(--color-dark-brighten);
+    --swiper-pagination-active-color: var(--color-dark);
+    --spacing: min(max(calc(1.8181818182vw + 0.625rem), 1rem), 2rem);
+    --default-spacing-multiplier: 3;
+}
+
+body {
+    color: var(--text-color);
+}
+
+/*! Gsap Default Styles */
+.viewport-wrapper {
+    height: auto;
+    overflow: visible;
+    position: relative;
+}
+
+.content-scroll {
+    display: block;
+    width: 100%;
+}
+
+.content-scroll main {
+    min-height: 100lvh;
+}
+
+/*! Gsap Styles when using ScrollSmoother */
+body:not(.normalize-scroll) .viewport-wrapper {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+body:not(.normalize-scroll) .content-scroll {
+    overflow: visible;
+    will-change: transform;
+    /*! Fix Flickering */
+}
+
+body:not(.normalize-scroll) .content-scroll [id*=gsap_swiper] .wrapper {
+    backface-visibility: hidden;
+    transform: scaleZ(1.001);
+}
+
+body:not(.normalize-scroll) .content-scroll [id*=gsap_swiper] .swiper-slide {
+    backface-visibility: hidden;
+    border-left: .0625rem solid transparent;
+    border-right: .0625rem solid transparent;
+    transform-style: preserve-3d;
+}
+
+[id*=gsap_swiper] {
+    --column-gap: var(--spacing);
+    --thumb-aspect-ratio: 16 / 9;
+    --thumb-aspect-ratio-rep: 14 / 9;
+    --thumb-aspect-ratio-md-down: 4 / 3;
+    --md-breakpoint: 48.04875em;
+    --max-wrapper-size: 75rem;
+    --slides-perview: 2.25;
+    --slides-perview-md-down: 1.05;
+    --col-width: calc(1 / var(--slides-perview));
+    --col-width-md-down: calc(1 / var(--slides-perview-md-down));
+    padding-bottom: calc(var(--spacing) * var(--default-spacing-multiplier));
+    padding-top: calc(var(--spacing) * var(--default-spacing-multiplier));
+}
+
+[id*=gsap_swiper][data-scrub] {
+    --pin-spacer-bg-color:rgb(49, 141, 239,0.1);
+}
+
+[id*=gsap_swiper][data-scrub] .swiper-navigation-container,
+[id*=gsap_swiper][data-scrub] .swiper-pagination-container {
+    display: none;
+}
+
+[id*=gsap_swiper][data-scrub] [class*=pin-spacer]:before {
+    background-color: rgb(49, 141, 239,0.1);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+[id*=gsap_swiper_01] {
+   background: rgb(49, 141, 239,0.1);
+    background-color: white;
+}
+
+
+/*! Swiper Heading */
+/* .text-before-wrapper {
+    margin-left: var(--swiper-text-before-margin-left, 0);
+    max-width: var(--swiper-text-before-width, 100%);
+    padding: 0 var(--spacing) calc(var(--spacing) * var(--default-spacing-multiplier) * .5) 0;
+    width: 100%;
+    margin-bottom: 5%;
+} */
+
+.text-before-wrapper h2 {
+    /* font-family: "Chronicle Display"; */
+    font-size: 4.5rem;
+    line-height: 1.1em;
+}
+
+/*! Swiper */
+.swiper-column-gap {
+    height: .0625rem;
+    margin: -.0625rem calc(-1 * var(--column-gap));
+    overflow: hidden;
+    padding: 0;
+    pointer-events: none;
+    position: absolute;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    width: var(--column-gap);
+}
+
+.media-container img {
+    aspect-ratio: var(--thumb-aspect-ratio-rep);
+}
+/* .media-container img{
+    width: 100%;
+    height: ;
+} */
+.swiper-slide {
+    min-width: 0;
+    width: calc((var(--max-wrapper-size) - var(--column-gap) * (var(--slides-perview) + 1)) * var(--col-width));
+}
+
+/*! Swiper Navigation  */
+.swiper-navigation-container {
+    display: block;
+    height: var(--swiper-navigation-height, 100%);
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.swiper-navigation-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+    pointer-events: none;
+    position: relative;
+    width: 100%;
+}
+
+.swiper-prev {
+    margin-right: auto;
+}
+
+.swiper-prev.hide {
+    transform: translate3d(-100%, 0, 0);
+}
+
+.swiper-next {
+    margin-left: auto;
+}
+
+.swiper-next.hide {
+    transform: translate3d(100%, 0, 0);
+}
+
+.swiper-next,
+.swiper-prev {
+    color: var(--color-light);
+    cursor: pointer;
+    display: block;
+    margin-bottom: auto;
+    margin-top: auto;
+    padding: calc(var(--spacing) * .25);
+    pointer-events: auto;
+    transition: transform .6s cubic-bezier(0, 0, 0, 1);
+}
+
+.swiper-next:before,
+.swiper-prev:before {
+    background-color: var(--color-dark);
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.swiper-next svg,
+.swiper-prev svg {
+    height: 1.5rem;
+    margin: auto;
+    pointer-events: none;
+    position: relative;
+    width: 1.5rem;
+}
+
+/*! Swiper Pagination  */
+.swiper-pagination-container {
+    display: block;
+    margin-top: calc(var(--spacing) * var(--default-spacing-multiplier) * .5);
+    min-height: calc(var(--spacing) * var(--default-spacing-multiplier) * .5);
+    pointer-events: none;
+    position: relative;
+}
+
+.swiper-pagination-wrapper {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    pointer-events: none;
+    position: relative;
+}
+
+.swiper-pagination {
+    pointer-events: auto;
+    position: relative;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    background-color: var(--swiper-pagination-color);
+    height: .75rem;
+    opacity: 1;
+    position: relative;
+    width: .75rem;
+}
+
+.swiper-pagination .swiper-pagination-bullet:after {
+    content: "";
+    height: 1.375rem;
+    left: 50%;
+    pointer-events: auto;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 1.375rem;
+}
+
+.swiper-pagination .swiper-pagination-bullet+.swiper-pagination-bullet {
+    margin-left: 1rem;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    background: var(--swiper-pagination-active-color);
+    pointer-events: none;
+}
+
+/*! Card */
+.card-container *+.card-text-content {
+    padding-top: var(--spacing);
+}
+
+.card-text-content {
+    padding-bottom: .0625rem;
+    word-wrap: break-word;
+}
+
+.card-text-content .title {
+    /* font-family: "Chronicle Display"; */
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+
+.card-text-content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: black !important;
+}
+
+.card-text-content .button {
+    --radius: 1.5rem;
+    background-color: var(--button-bg-color);
+    border-radius: max(.0625rem, min(var(--radius), (100vw - var(--radius) - 100%) * 9999))/var(--radius);
+    color: var(--button-color);
+    display: block;
+    min-height: 1rem;
+    padding: .5rem 1.25rem;
+    transition: color .4s ease-out, background .4s ease-out;
+    width: -moz-max-content;
+    width: max-content;
+}
+
+.card-text-content .button:active {
+    background-color: var(--button-bg-hover-color);
+    color: var(--button-hover-color);
+}
+
+.card-text-content .button .text {
+    color: inherit;
+    /* font-family: "Helvetica Now Display"; */
+    font-size: .9rem;
+    font-weight: 400;
+    letter-spacing: .05rem;
+    line-height: 1;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.card-text-content .title+p {
+    margin-top: calc(var(--spacing) * .5);
+}
+
+.card-text-content *+.button {
+    margin-top: var(--spacing);
+}
+
+.dummy-block {
+    align-items: center;
+    display: grid;
+    height: 100lvh;
+    justify-items: center;
+    place-items: center;
+    text-align: center;
+}
+
+.dummy-block h2,
+.dummy-block h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.dummy-block .text-container :is(h2, h3) {
+    margin-bottom: 0;
+}
+
+.wrapper-debug {
+    position: fixed !important;
+    border: .0625rem solid red;
+    height: 100%;
+    left: 0;
+    pointer-events: none;
+    top: 0;
+    width: 100%;
+    z-index: 9002;
+}
+
+@media (max-width:48.04875em) {
+    .text-before-wrapper {
+        margin-left: 0;
+        max-width: 100%;
+        padding: 0 var(--spacing) calc(var(--spacing) * var(--default-spacing-multiplier) * .5) var(--spacing);
+    }
+
+    .text-before-wrapper h2 {
+        font-size: 3.5rem;
+    }
+
+    .media-container picture {
+        aspect-ratio: var(--thumb-aspect-ratio-md-down);
+    }
+
+    .swiper-slide {
+        width: calc((100% - var(--column-gap) * (var(--slides-perview-md-down) + 1)) * var(--col-width-md-down));
+    }
+
+    .swiper-navigation-container {
+        display: none;
+    }
+
+    .card-text-content p {
+        -webkit-hyphens: none !important;
+        hyphens: none !important;
+        white-space: normal !important;
+        -webkit-box-orient: vertical;
+        /*! autoprefixer: off */
+        display: -webkit-box;
+        -webkit-line-clamp: var(--max-lines, 3);
+        overflow: hidden;
+        overscroll-behavior: none;
+        visibility: visible;
+        word-wrap: break-word;
+    }
+}
+
+@media (hover:hover) and (pointer:fine) {
+    .card-text-content .button:hover {
+        background-color: var(--button-bg-hover-color);
+        color: var(--button-hover-color);
+    }
+}
+
+/* my styling */
+.hero-section-digital {
+    background: url('../img/Tatahome/Strategy/Image%20From%20Tata%20Consumer_inside%2009.05.2024_V1.png') no-repeat center center;
+    height: 90vh;
+    background-size: cover;
+    margin-top: 6%;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-section-digital::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(45, 224, 206, 0.2),rgb(5, 150, 207,0.2)) ;
+    z-index: 1; /* Ensure the overlay is on top */
+}
+
+.hero-section-digital > * {
+    position: relative; /* Ensure the content inside is above the overlay */
+    z-index: 2;
+    color: #FFF; /* If you have text inside that needs to be white */
+}
+
+.text-heading-digital{
+    font-size: 44px !important;
+    width: 40% ;
+}
+.lineragradient-green-nlue{
+    width: 20%;
+    border-radius: 15px;
+    margin-left: 5%;
+    font-size: 20px;
+    background: linear-gradient(to right, #0DB14E, #01AEEF) !important;
+    color: white;
+    padding: 2%;
+}
+
+.textstartgey {
+    position: relative;
+    font-size: 350px;
+    text-transform: capitalize;
+    color: transparent;
+    -webkit-text-stroke: 6px #ffffff;
+  }
+  
+
+  .textstartgey::before {
+    content: attr(data-fill-text);
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to right,#FBEF10, #0DB14E, #01AEEF);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 0px transparent;
+    overflow: hidden;
+    transition: width 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  
+  .hero-section-digital:hover .textstartgey::before {
+    width: 100%;
+  }
+  /* .swiper-container{
+  margin-top: 4% !important;
+  } */
+  /* .card-container{
+    height: 100% !important;
+  } */
+.swiper-wrapper{
+    padding-top: 5% !important;
+}

@@ -412,14 +412,27 @@ body:not(.normalize-scroll) .content-scroll [id*=gsap_swiper] .swiper-slide {
 /* my styling */
 .hero-section-digital {
     background: url('../img/Tatahome/Strategy/Image%20From%20Tata%20Consumer_inside%2009.05.2024_V1.png') no-repeat center center;
-    height: 90vh;
+    height: 100vh;
     background-size: cover;
-    margin-top: 6%;
+    position: relative;
+    cursor: pointer;
+}
+.hero-section-digital1 {
+    background: url('../img/Tatahome/Governance/gov_img-1.jpg') no-repeat center center;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+}
+.hero-section-digital2 {
+    background: url('../img/Tatahome/PerfomanceReview/Perfomancebanner.png') no-repeat center center;
+    height: 100vh;
+    background-size: cover;
     position: relative;
     cursor: pointer;
 }
 
-.hero-section-digital::after {
+.hero-section-digital::after ,.hero-section-digital1::after,.hero-section-digital2::after {
     content: '';
     position: absolute;
     top: 0;
@@ -430,7 +443,7 @@ body:not(.normalize-scroll) .content-scroll [id*=gsap_swiper] .swiper-slide {
     z-index: 1; /* Ensure the overlay is on top */
 }
 
-.hero-section-digital > * {
+.hero-section-digital > *,.hero-section-digital1>* ,.hero-section-digital2>*{
     position: relative; /* Ensure the content inside is above the overlay */
     z-index: 2;
     color: #FFF; /* If you have text inside that needs to be white */
@@ -452,10 +465,11 @@ body:not(.normalize-scroll) .content-scroll [id*=gsap_swiper] .swiper-slide {
 
 .textstartgey {
     position: relative;
-    font-size: 350px;
+    font-size: 250px;
     text-transform: capitalize;
     color: transparent;
     -webkit-text-stroke: 6px #ffffff;
+    margin-bottom: 5%;
   }
   
 
@@ -472,7 +486,7 @@ body:not(.normalize-scroll) .content-scroll [id*=gsap_swiper] .swiper-slide {
     transition: width 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
   
-  .hero-section-digital:hover .textstartgey::before {
+  .hero-section-digital:hover .textstartgey::before ,.hero-section-digital1:hover .textstartgey::before,.hero-section-digital2:hover .textstartgey::before{
     width: 100%;
   }
   /* .swiper-container{

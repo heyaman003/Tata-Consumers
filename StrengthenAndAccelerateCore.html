@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Icon Font Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://assets.codepen.io/573855/lr-reset.min.css?v=30"
+    />
+    <link
+      rel="stylesheet"
+      href="https://assets.codepen.io/573855/lr-codepen-siematic-fonts.min.css?v=3"
+    />
+    <link
+      rel="stylesheet"
+      href="https://assets.codepen.io/573855/lr-codepen-siematic-base.css?v=30"
+    />
+    <link
+      rel="stylesheet"
+      href="https://assets.codepen.io/573855/swiper.min.css"
+    />
+    <link rel="stylesheet" href="./css/Gsap.css" />
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/Strengthen.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <div
+      class="container-fluid nav-bar d-flex justify-content-center align-item-center"
+    >
+      <div class="container">
+        <nav class="navbar navbar-light navbar-expand-lg py-4">
+          <a href="https://www.tataconsumer.com/"
+            ><img
+              width="250px"
+              height="40px"
+              src="./img/Tatahome/Logo.svg"
+              alt=""
+          /></a>
+          <button
+            class="navbar-toggler py-2 px-3"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="fa fa-bars text-primary"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto">
+              <a href="index.html" class="nav-item nav-link">Home</a>
+              <a href="PerfomanceReview.html" class="nav-item nav-link active"
+                >Perfomance Review</a
+              >
+              <a href="Strategy.html" class="nav-item nav-link"> Strategy</a>
+              <a href="Sustanability.html" class="nav-item nav-link"
+                >Sustainability
+              </a>
+              <a href="Governance.html" class="nav-item nav-link">
+                Governance
+              </a>
+              <!-- <div class="nav-item dropdown">
+                          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                          <div class="dropdown-menu bg-light">
+                              <a href="book.html" class="dropdown-item">Booking</a>
+                              <a href="blog.html" class="dropdown-item">Our Blog</a>
+                              <a href="team.html" class="dropdown-item">Our Team</a>
+                              <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                              <a href="404.html" class="dropdown-item">404 Page</a>
+                          </div>
+                      </div> -->
+              <!-- <a href="contact.html" class="nav-item nav-link">Contact</a> -->
+            </div>
+            <!-- <button class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas a-bars"></i></button> -->
+            <svg
+              class="hb"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 10 10"
+              stroke="#eee"
+              stroke-width=".6"
+              fill="rgba(0,0,0,0)"
+              stroke-linecap="round"
+              style="cursor: pointer"
+            >
+              <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
+                <animate
+                  dur="0.2s"
+                  attributeName="d"
+                  values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7"
+                  fill="freeze"
+                  begin="start.begin"
+                />
+                <animate
+                  dur="0.2s"
+                  attributeName="d"
+                  values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7"
+                  fill="freeze"
+                  begin="reverse.begin"
+                />
+              </path>
+              <rect width="10" height="10" stroke="none">
+                <animate
+                  dur="2s"
+                  id="reverse"
+                  attributeName="width"
+                  begin="click"
+                />
+              </rect>
+              <rect width="10" height="10" stroke="none">
+                <animate
+                  dur="0.001s"
+                  id="start"
+                  attributeName="width"
+                  values="10;0"
+                  fill="freeze"
+                  begin="click"
+                />
+                <animate
+                  dur="0.001s"
+                  attributeName="width"
+                  values="0;10"
+                  fill="freeze"
+                  begin="reverse.begin"
+                />
+              </rect>
+            </svg>
+          </div>
+        </nav>
+      </div>
+      <div class="logo-parent d-flex align-item-center">
+        <a href="https://www.tata.com/"
+          ><img src="./img/Tatahome/tata-Logo.png" alt=""
+        /></a>
+      </div>
+    </div>
+    <!-- Navbar End -->
+    <!-- banner section start here  -->
+    <div class="strengthen-home">
+      <div class="banner-section-strengthen">
+        <h1 class="heading-banner-common">
+          Strengthen <br />and accelerate <br />
+          core business
+        </h1>
+        <div class="message linear-gradient-container">
+          We remained committed to investing in our brands, expanding our sales
+          & distribution and accelerating the growth momentum of our core
+          business—tea, coffee and salt. During the year, we enriched our
+          portfolio, leveraged key consumer trends, launched impactful campaigns
+          and achieved significant milestones in our sales & distribution
+          roadmap.
+        </div>
+      </div>
+      <div class="info-container-common w-100 p-4 flex-wrap">
+        <h2 class="coomon-heading-size">FORTIFYING SALES & DISTRIBUTION</h2>
+        <div class="d-flex w-100">
+          <div class="strong-impetus">
+            <h2 class="black-normal-heading-common">
+              Strong impetus on direct reach
+            </h2>
+            <div class="gradient-line"></div>
+            <span class="small-mn">(Mn)</span>
+            <div class="circle-container">
+              <div class="white-circle">0.5</div>
+              <div class="linear-gradient-circle">1.6</div>
+              <div class="date-info w-100 d-flex">
+                <div class="text-left w-50">Sep'20</div>
+                <div class="text-left w-50">Mar'20</div>
+              </div>
+              <div class="gradient-line"></div>
+            </div>
+          </div>
+          <div class="strong-impetus mt-10 d-flex flex-wrap">
+            <div class="data-container">
+              <div class="small-gradient-line-square"></div>
+              <div class="gradient-line"></div>
+              <div class="data">4 Mn</div>
+              <div class="gradient-line"></div>
+              <div class="normal-text">Total reach <span>*</span></div>
+            </div>
+            <div class="data-container">
+              <div class="small-gradient-line-square"></div>
+              <div class="gradient-line"></div>
+              <div class="data">1,000+</div>
+              <div class="gradient-line"></div>
+              <div class="normal-text">#Distributors added during the year</div>
+            </div>
+            <div class="data-container">
+              <div class="small-gradient-line-square"></div>
+              <div class="gradient-line"></div>
+              <div class="data">100%</div>
+              <div class="gradient-line"></div>
+              <div class="normal-text">
+                Direct distributors in all 50k+ townss
+              </div>
+            </div>
+          </div>
+        </div>
+        <d-flex class="w-100 p-2">
+          <h2 class="coomon-heading-size">
+            REACHING AN INCREASINGLY OMNI-CHANNEL CONSUMER
+          </h2>
+          <div class="d-flex w-100 flex-wrap">
+            <div class="text-container-2">
+              <h3 class="blue-heading">
+                SPLIT ROUTE IMPLEMENTATION IN URBAN MARKETS
+              </h3>
+              <p class="descp-normal-text">
+                In our endeavour to drive sales efficiency and market
+                penetration, we fortified our sales approach in Ten Lac Plus
+                Population (TLP) towns. By implementing split routes for our
+                salesmen, we significantly improved our operational bandwidth.
+                This approach not only enhanced our processes but also led to a
+                discernible improvement in execution in these markets.
+              </p>
+              <h3 class="blue-heading">‘RURBAN’ EXPANSION</h3>
+              <p class="descp-normal-text">
+                We sharpened our focus on ‘Rurban’ markets as we continued to
+                deepen our distribution reach. We remained focused on driving
+                depth in existing geographies and widening our distribution in
+                lower population strata towns and rurban areas. By strategically
+                upgrading and appointing over 1,000 new distributors, we
+                achieved direct distribution coverage in all towns with
+                populations over 50,000. This expansion enabled better brand
+                visibility and greater control over the distribution network,
+                while also improving our direct reach and distributor
+                engagement.
+              </p>
+            </div>
+            <div class="image-conatiner-full">
+              <img src="./img/Tatahome/Strategy/strategysalt.png" alt="" />
+            </div>
+          </div>
+        </d-flex>
+      </div>
+      <div class="info-container-common w-100 p-4 flex-wrap">
+        <h2 class="coomon-heading-size">
+          Strengthen and accelerate core business
+        </h2>
+        <div class="d-flex w-100">
+          <div class="strong-impetus">
+            <h2 class="black-normal-heading-common">
+              Modern Trade contribution to India sales
+            </h2>
+            <div class="gradient-line"></div>
+            <span class="small-mn">(%)</span>
+            <div class="circle-container">
+              <div class="white-circle">11</div>
+              <div class="linear-gradient-circle">14</div>
+              <div class="date-info w-100 d-flex">
+                <div class="text-left w-50">FY 19-20</div>
+                <div class="text-left w-50">FY 23-24</div>
+              </div>
+              <div class="gradient-line"></div>
+            </div>
+          </div>
+          <div class="strong-impetus mt-10 d-flex flex-wrap">
+            <div class="data-container">
+              <div class="small-gradient-line-square"></div>
+              <div class="gradient-line"></div>
+              <div class="data">50</div>
+              <div class="gradient-line"></div>
+              <div class="normal-text">
+                new SKUs launched on Modern Trade shelves in FY 2023-24
+              </div>
+            </div>
+            <div class="w-80 normal-text-container">
+              <h3 class="p-2 px-0">PROPELLING GROWTH WITH MODERN TRADE</h3>
+              Modern trade made up 14% of our sales in India and, with 50 new
+              SKUs launched in FY 2023-24, it grew by 9% during the year. Our
+              new businesses drove growth in this channel. Tata Soulfull, for
+              instance, recorded significant growth in modern trade in FY
+              2023-24. There was also a notable increase in the contribution of
+              premium and value-added salt to our total salt business,
+              underscoring our emphasis on premiumisation
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 flex-wrap">
+            <div class="text-container-2">
+              <h3 class="blue-heading">
+                DRIVING PREMIUMISATION WITH THE INSTITUTIONAL CHANNEL
+              </h3>
+              <p class="descp-normal-text">
+                The institutional channel’s contribution to our India business rose to 4%, with a remarkable 26% growth over the last year. The channel also helped considerably to drive our premiumisation agenda, with the contribution of premium products in the institutional channel to our overall India business at 8% for Beverages and 10% for Salt. Moreover, this strategy propelled our Ready Foods business as we continued to innovate and venture into newer market segments.
+              </p>
+              <h3 class="blue-heading">DRIVING SELL OUT THROUGH SHOPPER MARKETING</h3>
+              <p class="descp-normal-text">
+                Our shopper marketing plans leveraged deep data insights to enable better execution and uncover opportunities. Our focus on premiumisation, combined with shopper insights, resulted in our premium brands recording their highest ever revenue contribution to our packaged beverages portfolio in FY 2023-24. In the salt category, our premium offering—Rock Salt—recorded significant gains. Our dynamic approach to market trends and customer preferences led to the successful launch of Tata Soulfull Ragi Bites Choco Sticks which garnered positive consumer response.
+              </p>
+             
+              <div class="strong-impetus w-100">
+                <h2 class="black-normal-heading-common">
+                    E-commerce contribution to India Sales
+                </h2>
+                <div class="gradient-line"></div>
+                <span class="small-mn">(%)</span>
+                <div class="circle-container">
+                  <div class="white-circle">3</div>
+                  <div class="linear-gradient-circle">11</div>
+                  <div class="date-info w-100 d-flex">
+                    <div class="text-left w-50">FY 19-20</div>
+                    <div class="text-left w-50">FY 23-24</div>
+                  </div>
+                  <div class="gradient-line"></div>
+                </div>
+              </div>
+              <div class="flex">
+                <div class=" normal-text-container">
+                E-commerce helped us drive our premiumisation agenda, as exemplified by Tata Tea Gold’s position as the largest tea brand in the channel. Additionally, the Gold Care variant contributed 11% and experienced
+       a notable 42% growth. Premium salts also played a crucial role, accounting for 42% of overall salt sales on E-commerce platforms.
+     In an effort to expedite the test-and-learn phase
+      for product launches, we established direct sales channels on prominent E-commerce platforms, such as Amazon. This approach not only facilitated quicker market insights but also aligned with our commitment to continuous improvement and innovation.
+              </div>
+              </div>
+            </div>
+            <div class="image-conatiner-full mt-3">
+              <img src="./img/Tatahome/Strategy/Artboard 2Govern.webp" alt="" />
+              <h3 class="blue-heading">REACHING NEW MILESTONES IN E-COMMERCE</h3>
+              <p class="descp-normal-text">
+                With 35% year-on-year growth, E-commerce remained a cornerstone of our growth strategy. E-commerce channels further equipped us to deliver a wider assortment and selection for customers via marketplace platforms.
+              </p>
+              <img src="./img/Tatahome/Strategy/111.png" alt="">
+            </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col col-lg-6 col-sm-12 normal-text-container">
+              During FY 2023-24, we continued to undertake focused brand-building efforts and launched several new products, which strengthened
+              our consumer-centricity and improved our performance. Central to our growth strategy remained our commitment to excelling in our core business—tea, coffee and salt—where our dedication to quality and innovation enabled us to deliver consistent results.
+            </div>
+            <div class="col col-lg-6 col-sm-12 specail-colourful-conatiner">
+              Value-added salts, which constituted less than <span>1% of salt revenue in FY 2019-20,</span> represented a significant  <span>9%</span> in FY 2023-24.
+            </div>
+          </div>
+     
+            
+            <div class="mt-3 row">
+              <div class="col-lg-7 col-sm-12">
+                <h3 class="blue-heading">
+                  MAKING THE SALT BUSINESS FUTURE-READY
+                </h3>
+                <p class="descp-normal-text">
+                  Tata Salt not only witnessed robust volume growth and enhanced brand equity but also successfully transitioned from a singular brand focus to a diversified, multi-brand, multi-product portfolio. We launched new variants in different SKUs to cater to changing consumer needs.
+                </p>
+              </div>
+             
+              <div class="col-lg-2 col-sm-12">
+                <div class="data-container" style="width: 100%;">
+                  <div class="small-gradient-line-square"></div>
+                  <div class="gradient-line"></div>
+                  <div class="data">42%</div>
+                  <div class="gradient-line"></div>
+                  <div class="normal-text">
+                    Value-added salts contribution to overall Salt on <br>E-commerce
+                  </div>
+                </div>
+                </div>
+                <div class="col-lg-2 col-sm-12">
+                  <img src="./img/Tatahome/Strategy/Artboard 4Govern.webp" alt=" hii">
+                  <p class="greensih-text">
+                    We continued to launch new variants in Salt, focused on the growing Health & Wellness space.
+                  </p>
+                </div>
+              </div>
+              <div class="mt-3 row">
+                <div class="col-lg-6 col-sm-12">
+                 <img class="w-100" src="./img/Tatahome/Strategy/Artboard 3Govern.webp" alt="salt">
+                </div>
+                <div class="col-lg-5 col-sm-12">
+                 <img  src="./img/Tatahome/Strategy/Artboard 6Govern.webp" alt="ayurveda">
+                </div>
+              </div>
+        </div>
+        <div class="container-fluid">
+          <h3 class="blue-heading">
+            DRIVING PREMIUMISATION WITH THE INSTITUTIONAL CHANNEL
+          </h3>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <p class="normal-text-container" style="width: 80%;">
+                Tata Tea Gold Vita Care, a vitamin- enriched tea with wellness benefits and a delicious taste, was launched to cater to health-conscious consumers.
+              </p>
+              <img src="./img/Tatahome/Strategy/Artboard 9Govern.webp" alt="tata-gold">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <p class="normal-text-container" style="width: 80%;">
+                Tata Salt highlighted the crucial role of iodine in children’s cognitive development, emphasising health in the campaign’s narrative of ‘Tez Baccho Se Hi Toh Tez Desh Banta Hain’.
+              </p>
+              <img src="./img/Tatahome/Strategy/Artboard 7Govern.webp" alt="tata-salt">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <p class="normal-text-container" style="width: 80%;">
+                We strengthened our salt wellness portfolio— Immuno, Iron Health, Vitamin Shakti, Tata Salt Lite and Super Lite—while also introducing them to more consumers during the year.
+              </p>
+              <img src="./img/Tatahome/Strategy/Artboard 8Govern.webp" alt="tata-salt-again">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <p class="normal-text-container" style="width: 80%;">
+                Tetley expanded its range with Immuno Chai Black Tea, addressing the growing consumer interest in functional beverages that support overall well-being.
+              </p>
+              <img src="./img/Tatahome/Strategy/Artboard 10Govern.webp" alt="Tetley">
+            </div>
+          </div>
+          <div class="row greyesh-background">
+            <div class="col-sm-12 col-lg-6 p-3">
+              <h3 class="blue-heading">
+                ENCOURAGING SOCIAL CONSCIOUSNESS
+              </h3>
+              <p class="normal-text-container">
+                The Jaago Re campaign by Tata Tea on environmental advocacy encouraged people to embrace eco- consciousness and take action against climate change. This campaign aimed at inspiring people, reinforcing the brand's long-standing commitment to addressing societal concerns.
+              </p>
+              <img src="./img/Tatahome/Strategy/Artboard 11Govern.webp" alt="">
+            </div>
+            <div class="col-sm-12 col-lg-6 p-3">
+              <p class="normal-text-container pt-4">
+                Tetley Green Tea Immune released a compelling sequel to last year’s successful campaign #everyBODYcan with a new campaign this year: I am more than my nickname. The campaign aimed at reinforcing the thought that ‘you are more than your body type’ and urged people to not be constrained by their nickname, which has been given to them based on their physical appearance, as a name does not define their abilities and fitness levels.
+              </p>
+              <img src="./img/Tatahome/Strategy/Artboard 12Govern.webp" alt="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-lg-6 p-3">
+              <h3 class="blue-heading">
+                FULFILLING OUR PROMISE OF PURITY
+              </h3>
+              <img src="./img/Tatahome/Strategy/Artboard 13Govern.webp" alt="">
+              <p class="normal-text-container pt-4">
+                Kanan Devan focused on its unique provenance story, captivating audiences with the serene beauty of Munnar tea estates. The campaign not only showcased the brand’s commitment to offering products that are as pure and untouched as their natural origins, but also appealed to consumers’ growing preference for authenticity and sustainability.
+              </p>
+             
+            </div>
+            <div class="col-sm-12 col-lg-6 p-3">
+              <h3 class="blue-heading">
+                LEVERAGING TATA SALT’S RICH HERITAGE WITH A CONTEMPORARY TWIST
+              </h3>
+              <p class="normal-text-container pt-4">
+                Tata Salt launched a unique campaign that breathed new
+life into its iconic jingle, ‘Namak ho Tata ka, Tata Namak’. The multi-asset campaign celebrated the brand’s ubiquity as ‘Desh Ka Namak’, resonating with the youth and also capturing the pulse of India. It offered a new outlook with a fresh spin to the jingle while retaining its timeless signature tune.
+              </p>
+              <img src="./img/Tatahome/Strategy/Artboard 14Govern.webp" alt="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-lg-6 p-4">
+              <img src="./img/Tatahome/Strategy/1112233.png" alt="">
+            </div>
+            <div class="col-sm-12 col-lg-6 p-4">
+              <img src="./img/Tatahome/Strategy/consumerfirst.png" alt="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 p-4">
+              <img src="./img/Tatahome/Strategy/karan.png" alt="">
+            </div>
+            <div class="col-lg-12">
+              <h3 class="blue-heading">
+                BUILDING CONSUMER CONNECT WITH HYPERLOCAL CAMPAIGNS
+              </h3>
+              <div class="row">
+                <div class="col-lg-4 col-md-12">
+                  <p class="normal-text-container">
+                    We engaged with diverse regional audiences, blending product relevance with local culture and preferences to enhance brand affinity.
+     Tata Tea Premium’s #DeshKaGarv
+   initiative continued to honour India’s
+   rich art, culture and heritage on
+  Independence Day. Following last
+  year’s focus on key milestones in India’s
+   post-Independence journey, this year’s
+  Desh Ke Dhaage campaign took the
+  nation on a vibrant joyride, spotlighting
+India’s diverse handloom legacy. It paid
+homage to this unique artform through
+a limited-edition pack collection inspired
+by handlooms across the country. Each
+pack served as a canvas, showcasing
+the artistry of Indian craftsmen, from the
+grandeur of Banarasi Silk to the intricate
+Kanjeevaram and more.
+                  </p>
+                </div>
+                <div class="col-lg-8 col-md-12 p-2">
+                  <img  src="./img/Tatahome/Strategy/india.png" alt="">
+                </div>
+               
+              </div>
+              <div class="row p-4">
+                <img src="./img/Tatahome/Strategy/222.png" alt="">
+              </div>
+              <div class="row p-4">
+                <h3 class="blue-heading">
+                  FUTURE-PROOFING OUR INTERNATIONAL BUSINESS
+                </h3>
+                <p class="normal-text-container">
+                  We strengthened our tea and coffee business while creating new vectors of growth, building stronger consumer connect and driving profitable growth in our key international markets— the UK, USA and Canada.
+                </p>
+                <div class="col-md-4 col-lg-4 col-sm-12 p-4">
+                  <h2 class="blue-heading">
+                    BLACK TEA
+                  </h2>
+                  <p class="normal-text-container">
+                    We gained a sizeable share of the black tea market in our key international geographies of the UK, USA and Canada and have seen value sales increase across all geographies. To revitalise the black tea market and foster stronger consumer connections, we bolstered our performance with innovation and impactful marketing.
+                    The Tetley brand in the UK underwent a significant transformation with a superior blend, plant-based tea bags, a 100% green energy factory and recyclable packaging.                  </p>
+                  <img src="./img/Tatahome/Strategy/Artboard 29Govern.png" alt="">
+                </div>
+                <div class="col-md-8 col-lg-8 col-sm-12 p-4">
+                  <h2 class="blue-heading">
+                    TRANSFORMING FOR BETTER
+                  </h2>
+                 <img class="my-2" src="./img/Tatahome/Strategy/Artboard 26Govern.png" alt="">
+                 <img class="my-2" src="./img/Tatahome/Strategy/Artboard 27Govern.png" alt="">
+                 <img class="my-2" src="./img/Tatahome/Strategy/Artboard 28Govern.png" alt="">
+                </div>
+              </div>
+              <div class="row p-4">
+                <div class="col-lg-4 col-sm-12">
+                  <p class="normal-text-container my-2">
+                    Our marketing initiatives across geographies, such as the ‘Spill The Tea’ campaign in Australia and the ‘Live Teas’ experiences in Canada, alongside a radio promotion featuring ex-English footballer, Gill Scott, modified tea’s image and enhanced its appeal. In the UK, extensive sampling efforts introduced our teas to over a million new consumers, significantly increasing brand visibility.
+                  </p>
+                  <p class="text-bold">
+                    In the UK, we became the
+                  </p>
+                 <div class="specail-colourful-conatiner-green">
+                  third <br> largest
+                 </div>
+                 <p class="text-bold">
+                  branded tea company* in <br>terms of market share.
+                </p>
+                
+                </div>
+                <div class="col-lg-4 col-sm-12 p-4 ">
+                  <img  src="./img/Tatahome/Strategy/Artboard 30Govern.png" alt="">
+                </div>
+                <div class="col-lg-4 col-sm-12 p-4">
+<img src="./img/Tatahome/Strategy/Artboard 31Govern.png" alt="">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-lg-6 p-3">
+                  <h3 class="blue-heading">
+                    NON-BLACK TEA
+                  </h3>
+                 
+                  <p class="normal-text-container pt-4">
+                    We strengthened our offerings in the non-black tea category to cater to growing consumer preferences for Fruit and Herbal teas. Our strategic emphasis on
+                    a three-brand framework, featuring Tetley, Teapigs and Good Earth, ensured robust representation across these categories. This strategy has been instrumental in widening our distribution channels, directly influencing sales.
+                  </p>
+                  <img src="./img/Tatahome/Strategy/Artboard 32Govern.png" alt="">
+                </div>
+                <div class="col-sm-12 col-lg-6 p-3">
+                  <h3 class="blue-heading">
+                    COFFEE
+                  </h3>
+                  <p class="normal-text-container pt-4">
+                    Our coffee business in the USA witnessed steady growth, especially within the fastest-growing K-cup segment, alongside broadening distribution channels. The flagship Eight O’Clock coffee brand underwent a rebranding, accompanied by a contemporary, playful advertising campaign designed to cut through a competitive market, further amplified by widespread sampling initiatives.
+                  </p>
+                  <img src="./img/Tatahome/Strategy/Artboard 33Govern.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- banner section ends here -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-md-square btn-primary rounded-circle back-to-top"
+      ><i class="fa fa-arrow-up"></i
+    ></a>
+    <!-- Back to Top -->
+    <div class="right-container">
+      <button
+        class="right-container-button d-flex justify-content-center align-items-center"
+      >
+        <span class="short-text">
+          <svg
+            id="icon-chat"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+            viewBox="0 0 256 256"
+            xml:space="preserve"
+          >
+            <defs></defs>
+            <g
+              style="
+                stroke: none;
+                stroke-width: 0;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: none;
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+            >
+              <path
+                d="M 87.994 0 H 69.342 c -1.787 0 -2.682 2.16 -1.418 3.424 l 5.795 5.795 l -33.82 33.82 L 28.056 31.196 l -3.174 -3.174 c -1.074 -1.074 -2.815 -1.074 -3.889 0 L 0.805 48.209 c -1.074 1.074 -1.074 2.815 0 3.889 l 3.174 3.174 c 1.074 1.074 2.815 1.074 3.889 0 l 15.069 -15.069 l 14.994 14.994 c 1.074 1.074 2.815 1.074 3.889 0 l 1.614 -1.614 c 0.083 -0.066 0.17 -0.125 0.247 -0.202 l 37.1 -37.1 l 5.795 5.795 C 87.84 23.34 90 22.445 90 20.658 V 2.006 C 90 0.898 89.102 0 87.994 0 z"
+                style="
+                  stroke: none;
+                  stroke-width: 1;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: rgb(0, 0, 0);
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+                stroke-linecap="round"
+              />
+              <path
+                d="M 65.626 37.8 v 49.45 c 0 1.519 1.231 2.75 2.75 2.75 h 8.782 c 1.519 0 2.75 -1.231 2.75 -2.75 V 23.518 L 65.626 37.8 z"
+                style="
+                  stroke: none;
+                  stroke-width: 1;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: rgb(0, 0, 0);
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+                stroke-linecap="round"
+              />
+              <path
+                d="M 47.115 56.312 V 87.25 c 0 1.519 1.231 2.75 2.75 2.75 h 8.782 c 1.519 0 2.75 -1.231 2.75 -2.75 V 42.03 L 47.115 56.312 z"
+                style="
+                  stroke: none;
+                  stroke-width: 1;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: rgb(0, 0, 0);
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+                stroke-linecap="round"
+              />
+              <path
+                d="M 39.876 60.503 c -1.937 0 -3.757 -0.754 -5.127 -2.124 l -6.146 -6.145 V 87.25 c 0 1.519 1.231 2.75 2.75 2.75 h 8.782 c 1.519 0 2.75 -1.231 2.75 -2.75 V 59.844 C 41.952 60.271 40.933 60.503 39.876 60.503 z"
+                style="
+                  stroke: none;
+                  stroke-width: 1;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: rgb(0, 0, 0);
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+                stroke-linecap="round"
+              />
+              <path
+                d="M 22.937 46.567 L 11.051 58.453 c -0.298 0.298 -0.621 0.562 -0.959 0.8 V 87.25 c 0 1.519 1.231 2.75 2.75 2.75 h 8.782 c 1.519 0 2.75 -1.231 2.75 -2.75 V 48.004 L 22.937 46.567 z"
+                style="
+                  stroke: none;
+                  stroke-width: 1;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: rgb(0, 0, 0);
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+                stroke-linecap="round"
+              />
+            </g>
+          </svg>
+        </span>
+        <span class="long-text" style="">View Chart</span>
+      </button>
+    </div>
+
+    <script src="https://assets.codepen.io/573855/lr-codepen-utils.js?v=30"></script>
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js?v=3.12"></script>
+    <!-- <script src="https://assets.codepen.io/16327/ScrollSmoother.min.js?v=3.12"></script> -->
+    <script src="https://assets.codepen.io/573855/swiper.min.js"></script>
+    <script src="./js/Gsap.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

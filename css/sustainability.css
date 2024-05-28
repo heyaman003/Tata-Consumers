@@ -1,0 +1,126 @@
+.esg-banner-container{
+  height: 90vh;
+  background: linear-gradient(160deg,rgba(33, 200, 233, 0.8), rgba(22, 130, 198, 0.5), transparent 70% ), url(../img/Tatahome/Sustanability/esg-banner.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: brightness(0.8);
+  display: flex;
+  align-items:flex-end;
+}
+.esg-banner-container img{
+  width: 100%;
+  height: 100%;
+}
+.esg-banner-container .text{
+  margin: 10vh auto;
+  font-weight: 800;
+  position: relative;
+  font-size: 15vw;
+  text-transform: capitalize;
+  color: transparent;
+  -webkit-text-stroke: 3px #ffff;
+}
+.esg-banner-container .text::before {
+  content: attr(data-fill-text);
+  position: absolute;
+  width: 0;
+  height: 105%;
+  background: #ffff;
+  /* background: linear-gradient(to right,#FBEF10, #0DB14E, #01AEEF); */
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 0px transparent;
+  overflow: hidden;
+  transition: width 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.esg-banner-container .text:hover::before {
+  width: 100%;
+}
+.esg-2{
+  background-image: linear-gradient(to right, rgb(13, 177, 78, 0.3), #FFFF, rgb(1, 174, 239,0.3));
+  padding: 2%;
+}
+.esg-2 .container .esg-masked-img{
+  margin: auto;
+  width: 60%;
+}
+.custom-col-60 {
+  flex: 0 0 60%;
+  max-width: 60%;
+}
+.custom-col-40 {
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+.icon-row {
+  cursor: pointer;
+  margin: 5% 0;
+}
+.icon-row img{
+  width: 50%;
+}
+.data-row {
+  display: none; /* Initially hide the data rows */
+}
+.data-box{
+  background-color: rgb(222, 184, 135,0.2);
+}
+.esg2-sdg{
+  background-color: rgb(222, 184, 135, 0.2);
+}
+.esg-3{
+  background-color: rgb(135, 206, 235, 0.2);
+}
+.esg-4{
+  background-color: rgb(222, 184, 135, 0.2);
+}
+.esg-5-2{
+background-color: rgb(222, 184, 135, 0.2);
+}
+.bg-grad{
+background-image: linear-gradient(to right, #0DB14E, #01AEEF);
+}
+.fixed-height {
+height: 450px; /* Set the desired height */
+}
+.img-cover-es8 {
+height: 100%;
+object-fit: cover; /* Ensure the images cover the area without distortion */
+}
+.esg-plant-bg {
+width: 90vw;
+margin: 0 auto; /* Ensures the margin is auto on left and right */
+height: 50vh;
+background-image: url(../img/sustainability/sdg8-img11.jpg);
+background-size: cover; /* Ensures the background image covers the entire div */
+background-position: center; /* Centers the background image */
+}
+.container-plant{
+display: flex;
+justify-content: center; /* Centers the child div horizontally */
+align-items: center; /* Centers the child div vertically */
+height: 100vh; /* Takes full height of the viewport */
+}
+.container-plant{
+/* height: 90vh; */
+background-image: url(../img/sustainability/sdg8-img11.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+/* filter: brightness(0.8); */
+display: flex;
+align-items:flex-end;
+}
+.burybrown{
+background-color: rgba(181, 175, 167, 0.2);
+}
+
+
+
+
+
+
+
+
+

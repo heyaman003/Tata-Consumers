@@ -1,0 +1,26 @@
+.vpf-vcmodel {
+    background-image: linear-gradient(to right, rgb(191, 220, 192),rgb(205, 221, 205), rgb(153, 223, 249),rgb(203, 239, 252), transparent, transparent, transparent);
+}
+.vpf-3{
+  background-color: #f2eeea;   
+}
+
+.vpf-4{
+  background-color: #f7f5f1;   
+}
+.vpf-5-img {
+    /* display: flex;
+    justify-content: flex-end;
+    align-items:first baseline; */
+    width: 100px;
+    height: 75px;
+}
+  .grey-bg{
+    background-color: #f2eeea;
+    height: 350px;
+    padding: 15px;
+  }
+  .vpf-6{
+    background-image: linear-gradient(to right, rgb(162, 219, 244), rgb(224, 240, 246) ,rgb(162, 219, 244));
+
+  }

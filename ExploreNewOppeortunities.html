@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Icon Font Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://assets.codepen.io/573855/lr-reset.min.css?v=30"
+    />
+    <link
+      rel="stylesheet"
+      href="https://assets.codepen.io/573855/lr-codepen-siematic-fonts.min.css?v=3"
+    />
+    <link
+      rel="stylesheet"
+      href="https://assets.codepen.io/573855/lr-codepen-siematic-base.css?v=30"
+    />
+    <link
+      rel="stylesheet"
+      href="https://assets.codepen.io/573855/swiper.min.css"
+    />
+    <link rel="stylesheet" href="./css/Gsap.css" />
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/Strengthen.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <div
+      class="container-fluid nav-bar d-flex justify-content-center align-item-center"
+    >
+      <div class="container">
+        <nav class="navbar navbar-light navbar-expand-lg py-4">
+          <a href="https://www.tataconsumer.com/"
+            ><img
+              width="250px"
+              height="40px"
+              src="./img/Tatahome/Logo.svg"
+              alt=""
+          /></a>
+          <button
+            class="navbar-toggler py-2 px-3"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="fa fa-bars text-primary"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto">
+              <a href="index.html" class="nav-item nav-link">Home</a>
+              <a href="PerfomanceReview.html" class="nav-item nav-link active"
+                >Perfomance Review</a
+              >
+              <a href="Strategy.html" class="nav-item nav-link"> Strategy</a>
+              <a href="Sustanability.html" class="nav-item nav-link"
+                >Sustainability
+              </a>
+              <a href="Governance.html" class="nav-item nav-link">
+                Governance
+              </a>
+            </div>
+            <!-- <button class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas a-bars"></i></button> -->
+            <svg
+              class="hb"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 10 10"
+              stroke="#eee"
+              stroke-width=".6"
+              fill="rgba(0,0,0,0)"
+              stroke-linecap="round"
+              style="cursor: pointer"
+            >
+              <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
+                <animate
+                  dur="0.2s"
+                  attributeName="d"
+                  values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7"
+                  fill="freeze"
+                  begin="start.begin"
+                />
+                <animate
+                  dur="0.2s"
+                  attributeName="d"
+                  values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7"
+                  fill="freeze"
+                  begin="reverse.begin"
+                />
+              </path>
+              <rect width="10" height="10" stroke="none">
+                <animate
+                  dur="2s"
+                  id="reverse"
+                  attributeName="width"
+                  begin="click"
+                />
+              </rect>
+              <rect width="10" height="10" stroke="none">
+                <animate
+                  dur="0.001s"
+                  id="start"
+                  attributeName="width"
+                  values="10;0"
+                  fill="freeze"
+                  begin="click"
+                />
+                <animate
+                  dur="0.001s"
+                  attributeName="width"
+                  values="0;10"
+                  fill="freeze"
+                  begin="reverse.begin"
+                />
+              </rect>
+            </svg>
+          </div>
+        </nav>
+      </div>
+      <div class="logo-parent d-flex align-item-center">
+        <a href="https://www.tata.com/"
+          ><img src="./img/Tatahome/tata-Logo.png" alt=""
+        /></a>
+      </div>
+    </div>
+    <!-- Navbar End -->
+    <!-- banner section start here  -->
+    <div class="strengthen-home">
+      <!-- img/Tatahome/Strategy/shutterstock_2149634653 (1).jpg -->
+      <div class="banner-section-strengthen4">
+        <h1 class="heading-banner-common">
+            Explore new<br />
+            opportunities
+        </h1>
+        <div class="message linear-gradient-container">
+            We continued to explore new opportunities through both organic and inorganic routes. We expanded our portfolio, entered new categories and widened our horizons. In line with the focus areas identified in food & beverages, we accelerated our growth momentum, offering distinctive value to consumers and creating an agile and consumer centric business.
+        </div>
+      </div>
+    </div>
+
+    <!-- banner section ends here -->
+    <div class="row p-4 w-100">
+        <div class="col-lg-5 col-sm-12 p-4">
+              <div >
+                <h2 class="black-normal-heading-common">
+                    Contribution of Growth Businesses* to India Branded Revenue
+                </h2>
+                <div class="gradient-line"></div>
+                <span class="small-mn">(%)</span>
+                <div class="circle-container">
+                  <div class="white-circle">6</div>
+                  <div class="linear-gradient-circle">18</div>
+                  <div class="date-info w-100 d-flex">
+                    <div class="text-left w-50">FY 19-20</div>
+                    <div class="text-left w-50">FY 23-24</div>
+                  </div>
+                  <div class="gradient-line"></div>
+                </div>
+              </div>
+            <p class="normal-text-container w-75">*Growth Businesses refer to Tata Sampann,
+                NourishCo, Tata Soulfull and Tata SmartFoodz.</p>  
+        </div>
+      <div class="col-lg-7 col-sm-12 p-4">
+        <img src="./img/Tatahome/Unlocksynergies/Artboard 4@3x.webp" alt="">
+      </div>
+     
+      </div>
+  <div class="row p-4 w-100">
+    <div class="col-lg-6 col-sm-12">
+        <div class="blue-heading">DIALLING UP HEALTH & WELLNESS</div>
+        <p class="normal-text-container">Health and wellness, as a key trend, gained traction globally. In response to evolving consumer needs, we diversified into value-added products within existing categories to give our consumers healthier options. We ventured into premium categories, such as dry fruits, introducing salted and roasted nuts and seed mixes, along with a range extension into walnuts.</p>
+       <img src="./img/Tatahome/Unlocksynergies/Artboard 26.webp" alt="">
+    </div>
+    <div class="col-lg-6 col-sm-12 mt-5">
+        <p class="normal-text-container">In the fast-growing vermicelli category, Tata Sampann became the first national player to introduce millet vermicelli, including roasted and unroasted varieties. We also entered the northern market with raw Daliya, meeting consumer demand for traditional and nutritious meal options.
+        </p>
+       <img src="./img/Tatahome/Unlocksynergies/Artboard 27.webp" alt="">
+    </div>
+  </div>
+<div class="row p-4 w-100">
+    <h3 class="blue-heading">EXPANDING PORTFOLIO INTO ADJACENCIES</h3>
+    <div class="col-sm-12 col-lg-6">
+        <p class="normal-text-container w-75">Understanding regional nuances and preferences, we introduced products, such as Indori Poha for Central India, ensuring a sensorially resonant cooking and consumption experience.</p>
+        <img class="image-fluid" src="./img/Tatahome/Unlocksynergies/Artboard 30.webp" alt="">
+    </div>
+    <div class="col-sm-12 col-lg-6">
+        <p class="normal-text-container w-75 m-auto">Expanding our spices range, we introduced a high-value product, Asafoetida Powder (Hing). Regional campaigns focused on consumer testimonials were also employed to enhance brand visibility and encourage the adoption for Tata Sampann Spices.</p>
+        <img class="image-fluid" src="./img/Tatahome/Unlocksynergies/Artboard 31.webp" alt="">
+    </div>
+</div>
+ <div class="row p-4 w-100">
+    <p class="normal-text-container">Foraying into high-value categories, we introduced Saffron, addressing the trust deficit prevalent in this category. A1 grade cooking soda was also launched, setting a new standard for quality assurance in a fragmented market.</p>
+ <div class="col-lg-6 col-sm-12"><img src="./img/Tatahome/Unlocksynergies/Artboard 33.webp" alt="" class="img-fluid"></div>
+ <div class="col-lg-6 col-sm-12"><img src="./img/Tatahome/Unlocksynergies/Artboard 32.webp" alt="" class="img-fluid"></div>
+</div>
+<div class="row p-4 w-100">
+    <img  class="image-fluid" src="./img/Tatahome/Unlocksynergies/Artboard 34.webp" alt="">
+</div>
+<div class="row p-4 w-100 my-3">
+    <div class="col-lg-9 col-sm-12 m-auto">
+        <div class="row">
+            <div class="col-sm-12 col-lg-6">
+                <p class="normal-text-container"> Amid these new launches, consistent digital campaigns played a pivotal role
+                    in ensuring that the brand continued to resonate with and recruit new consumers. As Tata Sampann explored new opportunities, it remained dedicated to providing high-quality, wholesome, and convenient products that redefined the landscape of everyday staples.</p>
+               </div>
+            <div class="col-sm-12 col-lg-6"> <img src="./img/Tatahome/Unlocksynergies/Artboard 35.webp" alt=""></div>
+        </div>
+        
+    </div>
+</div>
+<div class="w-100 p-3 row">
+    <img src="./img/Tatahome/Unlocksynergies/Artboard 5@3x.webp" alt="" class="img-fluid">
+</div>
+<div class="row p-4 w-100">
+    <p class="normal-text-container">
+        The brand ran a bold campaign, <br>
+       <span style="font-size: 28px;" class="py-4">“Aap Prem Se Khaiye, Duniya Rukegi,”</span> <br>
+        reinforcing its commitment to delivering an unmatched taste experience in this fast-paced and convenience-driven category.
+    </p>
+    <div class=" col-lg-8 col-sm-12">
+<img src="./img/Tatahome/Unlocksynergies/Artboard 37.webp" alt="">
+    </div>
+    <div class=" col-lg-2 col-sm-12 m-auto">
+        <div class="data-container w-100">
+            <div class="small-gradient-line-square"></div>
+            <div class="gradient-line"> </div>
+            <div class="data">18</div>
+            <div class="gradient-line"> </div>
+            <div class="normal-text">Ready-to-Eat SKUs</div>
+        </div>
+        <div class="data-container w-100">
+            <div class="small-gradient-line-square"></div>
+            <div class="gradient-line"> </div>
+            <div class="data">5</div>
+            <div class="gradient-line"> </div>
+            <div class="normal-text">Ready-to-Cook SKUs</div>
+        </div>
+    </div>
+</div>
+<div class="row p-4 w-100">
+    <img src="./img/Tatahome/Unlocksynergies/ffff.png" alt="">
+</div>
+<div class="w-100 p-4 row">
+    <img src="./img/Tatahome/Unlocksynergies/Artboard 38.webp" alt="" class="img-fluid">
+    <div class="col-sm-12 col-lg-6 ">
+        <h3 class="blue-heading-dark p-4"> ADDING MULTIPLE GROWTH VECTORS</h3>
+        <img src="./img/Tatahome/Unlocksynergies/Artboard 39.webp" alt="">
+</div >
+    <div class="col-sm-12 col-lg-6 p-4 ">
+        <img src="./img/Tatahome/Unlocksynergies/graphgh.png" alt="">
+</div >
+</div>
+
+<div class="row p-4 w-100">
+    <h3 class="blue-heading">ENTERING NEW CATEGORIES WITH DIFFERENTIATED PRODUCTS</h3>
+    <h3 clss="blue-heading-dark">DRIVING PREMIUMISATION</h3>
+    <p class="normal-text-container">We incorporated premium offerings in our portfolio, meeting the growing demand for high-quality, indulgent products and enhancing our positioning in the premium segment.</p>
+   <div class="col-lg-5 col-sm-12 p-2">
+    <div class="black-normal-heading-common my-3" style="color: #419faa;">Tata Coffee Gold - Cold Brew</div>
+    <p class="normal-text-container">Venturing into the ready-to-drink cold brew coffee category, we launched Tata Coffee Gold - Cold Brew. This premium offering, steeped for more than 12 hours to extract maximum flavour, redefines the on-the-go coffee experience with a unique blend of cold brew in three enticing variants: Classic, Hazelnut and Mocha. We have also strengthened the portfolio with the rollout of cans for our premium channels.
+    </p>
+   </div>
+   <div class="col-lg-7 col-sm-12 p-4">
+    <img src="./img/Tatahome/Unlocksynergies/Artboard 40.webp" alt="" class="img-fluid">
+   </div>
+  
+</div>
+<div class="row p-4 w-100">
+   <div class="col-lg-5 col-sm-12 p-2">
+    <div class="black-normal-heading-common my-3" style="color: #419faa;">Himalayan Saffron</div>
+    <p class="normal-text-container">Embracing the trend of premiumisation, we launched premium Grade 1 Kashmiri Saffron, strengthening Himalayan’s positioning as a provenance brand. Each pack is equipped with a QR code, providing consumers access to origin and quality certificates, coupled with an immersive AI-powered Himalayan experience.
+    </p>
+   </div>
+   <div class="col-lg-7 col-sm-12 p-4">
+    <img src="./img/Tatahome/Unlocksynergies/Artboard 40.webp" alt="" class="img-fluid">
+   </div>
+  <img src="./img/Tatahome/Unlocksynergies/Artboard 41.webp" alt="">
+</div>
+<div class="row p-4 w-100">
+   <div class="col-lg-6 col-sm-12 p-2">
+    <h3 class="blue-heading-dark">LAUNCHING FUNCTIONAL BEVERAGES</h3>
+    <p class="normal-text-container">Our new launches strived to fill the need gap for an affordable, energy boost by addressing the demand with convenient, relevant and invigorating on-the-go beverages.
+    </p>
+    <div class="black-normal-heading-common my-3" style="color: #419faa;">Say Never!</div>
+    <p class="normal-text-container">We ventured into the dynamic, fast-growing energy drinks category with the introduction of our Say Never! energy drink. Crafted with the consumer in mind, this affordable caffeine-based beverage comes packed with essential vitamins, offering an invigorating experience in two exciting variants: Red and Blue.
+    </p>
+    <img src="./img/Tatahome/Unlocksynergies/Artboard 66.webp" alt="" class="img-fluid">
+    <div class="black-normal-heading-common my-3" style="color: #419faa;">Tata Gluco+ Sports Drink</div>
+    <p class="normal-text-container">We launched a sports drink under the Tata Gluco+ brand with an impactful marketing campaign. <br>
+        <br>
+        In a strategic collaboration with the Argentina Football Association, Tata Gluco+ became the regional sponsor for the World Champions, Team Argentina. This partnership birthed the co-branded Tata Gluco+ Sports Drink, a refreshing isotonic beverage designed to energise athletes and sports enthusiasts alike.
+    </p>
+    <img class="image-fluid" src="./img/Tatahome/Unlocksynergies/Artboard 65.webp" alt="">
+</div>
+   <div class="col-lg-6 col-sm-12 mt-4 p-4">
+   <h3 class="blue-heading">STRENGTHENING THE WATER PORTFOLIO</h3>
+   <p class="normal-text-container">Our water portfolio has distinctive offerings with unique value propositions. Himalayan is our premium natural mineral water brand, bottled at source. Tata Copper+ has the traditional goodness of copper while retaining the taste of regular water.
+</p>
+<h3 class="blue-heading-dark my-3">TATA SPRING ALIVE</h3>
+<p class="normal-text-container">To strengthen the natural mineral water portfolio, we introduced two SKUs in North India. The premise of the brand was mineral water bottled at regional natural sources, to offer pristine packaged water with natural minerals intact, that is competitively priced.</p>
+<img class="image-fluid mt-3" src="./img/Tatahome/Unlocksynergies/Artboard 67.webp" alt="">
+   </div>
+</div>
+
+<div class="row greyesh-background w-100 p-4">
+    <div class="col-sm-12 col-lg-6 p-3">
+      <h3 class="blue-heading px-4">
+        Tata Soulfull
+      </h3>
+      <p class="normal-text-container p-4">
+        As a leading brand in the millets space, Tata Soulfull is dedicated to bringing ‘Desh ke Millets’, like Ragi, Jowar and Bajra, in modern formats to every Indian household through its wide range of products like, Millet Muesli, Ragi Bites breakfast cereals and Masala Oats+. The United Nations declared 2023 as the ‘International Year of Millets’, which presented an opportunity to increase consumer awareness around millets and make them available to consumers in formats that are convenient and affordable. Tata Soulfull is dedicated to creating innovative millet- based products that align with modern consumer lifestyles. We recently opened a new factory in Indore to increase capacity and reduce distance to market.
+      </p>
+    </div>
+    <div class="col-sm-12 col-lg-6 p-3 ">
+        <div class="data-container w-50 m-auto">
+            <div class="small-gradient-line-square"></div>
+            <div class="gradient-line"> </div>
+            <div class="data">42%</div>
+            <div class="gradient-line"> </div>
+            <div class="normal-text">Growth in <br> FY 2023-24</div>
+        </div>
+        <div class="data-container w-50 m-auto">
+            <div class="small-gradient-line-square"></div>
+            <div class="gradient-line"> </div>
+            <div class="data">4X</div>
+            <div class="gradient-line"> </div>
+            <div class="normal-text">Revenues since <br> acquisition</div>
+        </div>
+        <div class="data-container w-50 m-auto">
+            <div class="small-gradient-line-square"></div>
+            <div class="gradient-line"> </div>
+            <div class="data">3.2 Lakhs outlets</div>
+            <div class="gradient-line"> </div>
+            <div class="normal-text">Tata Soulfull’s reach</div>
+        </div>
+    </div>
+    <img class="image-fluid" src="./img/Tatahome/Unlocksynergies/Artboard 64.webp" alt="">
+  </div>
+
+<div class="row p-4 w-100">
+    <div class="col-sm-12 col-lg-6">
+        <h3 class="blue-heading">MODERN MILLET RENAISSANCE</h3>
+        <p class="normal-text-container">
+            In its 75th session, the United Nations officially recognised 2023 as the International Year of Millets (IYM). Millet, a climate-resilient crop, aligns with the UN Sustainable Development Goals and is identified as a smart food due to its high nutritional content. <br>
+            <br>
+            Recognising the nutritional value of millets, the Government of India categorised millets as Nutri- cereals in 2018. Millets are also strategically integrated into the National Food Security Mission (NFSM) to
+offer essential nutritional support. As the world’s largest millet producer, India assumes a crucial role in promoting millets.
+        </p>
+    </div>
+    <div class="col-sm-12 col-lg-6 p-4">
+        <img src="./img/Tatahome/Unlocksynergies/Artboard 68.webp" alt="" class="img-fluid">
+    </div>
+    <div class="black-normal-heading-common">Leveraged UN’s International Year of Millets 2023 to drive consumer awareness by participation in government events and millet fairs</div>
+    <img src="./img/Tatahome/Unlocksynergies/Artboard 58.webp" alt="" class="img-fluid">
+    <div class="col-sm-12 col-lg-6">
+        <img class="img-fluid" src="./img/Tatahome/Unlocksynergies/Artboard 59.webp" alt="">
+    </div>
+    <div class="col-sm-12 col-lg-6">
+        <img class="img-fluid" src="./img/Tatahome/Unlocksynergies/Artboard 60.webp" alt="">
+    </div>
+</div>
+<div class="row w-100 p-4">    
+    <img src="./img/Tatahome/Unlocksynergies/Artboard 56.webp" alt= "">
+</div>
+<div class="row w-100 p-4">
+   
+     <div class="col-lg-5 col-sm-10 ">
+        <h3 class="blue-heading">CONTINUED TO BUILD STRENGTH IN OUR CORE CATEGORIES...</h3>
+        <img src="./img/Tatahome/Unlocksynergies/Artboard 55.webp" alt="">
+     </div>
+     <div class="col-lg-7 col-sm-10 m-auto">
+        <h3 class="blue-heading">... AND ENTERED NEW CATEGORIES</h3>
+        <p class="normal-text-container">We launched an array of new products this year, offering accessible and nutritious options tailored to various consumer segments and price points.</p>
+        <div class="data-container w-50 my-3">
+            <div class="small-gradient-line-square"></div>
+            <div class="gradient-line"> </div>
+            <div class="data">12.5%</div>
+            <div class="gradient-line"> </div>
+            <div class="normal-text">Innovation to sales contribution for Soulfull</div>
+        </div>
+        <img class="image-fluid" src="./img/Tatahome/Unlocksynergies/Artboard 49.webp" alt="">
+        <div class="row w-100">
+            <div class="col-lg-5 col-sm-12 m-auto">
+                <div class="normal-text-container m-auto">
+                    Joyfull Campaign -
+                  <span style="font-size: 34px; color: rgb(63 174 176);"> Breakfast that eats <br>other breakfasts for  <br>breakfast.</span>
+                </div>
+            </div>
+            <div class="col-lg-7 col-sm-12 py-2">
+             <img src="./img/Tatahome/Unlocksynergies/Artboard 48.webp" alt="">
+            </div>
+            <img src="./img/Tatahome/Unlocksynergies/Artboard 50.webp" alt="" class="img-fluid">
+            <img src="./img/Tatahome/Unlocksynergies/Artboard 47.webp" alt="" class="img-fluid">
+        </div>
+     </div>
+    
+</div>
+<div class="row w-100 p-4">
+<h3 class="blue-heading">STRENGTHENING CONSUMER CONNECT THROUGH INNOVATIVE CAMPAIGNS</h3>
+<div class="col-lg-6 col-sm-12">
+    <img src="./img/Tatahome/Unlocksynergies/DESH.png" alt="desh-ki-mitti">
+    <p class="normal-text-container">The Desh ke Millets campaign is in line with the brand’s commitment to reintroduce traditional Indian millets, like Ragi, Jowar and Bajra, in modern wholesome formats at affordable price points. It features products, like Millet Muesli, Ragi Bites, and Masala Oats+, at ₹5/₹10/₹15 price points therefore democratising millets.</p>
+    <img src="./img/Tatahome/Unlocksynergies/Artboard 44.webp" alt="">
+    <p class="normal-text-container my-3">
+        Tata Soulfull Ragi Bites No Maida Choco Campaign <br>
+        <span>- No Junk All Crunch </span>  
+    </p>
+    <img src="./img/Tatahome/Unlocksynergies/Artboard 45.webp" alt="">
+
+</div>
+<div class="col-lg-6 col-sm-12">
+    <p class="normal-text-container">Tata Soulfull Ragi Bites Choco Sticks - <br>
+      <span>No Junk, Chocolatey Crunch</span> </p>
+    <img src="./img/Tatahome/Unlocksynergies/Artboard 41 copy.webp" alt="">
+    <p class="normal-text-container">Tata Soulfull Masala Oats+ -  <br><span> Non-Sticky Mast, Taste Zabardast</span></p>
+    <img src="./img/Tatahome/Unlocksynergies/Artboard 46.webp" alt=""> 
+</div>
+<p class="normal-text-container">Tata Soulfull Millet Muesli <span> - Better Crunch, Wholesome Munch</span></p>
+<img src="./img/Tatahome/Unlocksynergies/Artboard 42.webp" alt="" class="img-fluid">
+</div>
+
+<div class="row w-100 p-4">
+    <div class="col-sm-12 col-lg-6">
+        <img src="./img/Tatahome/Unlocksynergies/Artboard 2.webp" alt="">
+        <img src="./img/Tatahome/Unlocksynergies/Artboard 3.webp" alt="">
+        <img src="./img/Tatahome/Unlocksynergies/Artboard 4.webp" alt="">
+    </div>
+    <div class="col-sm-12 col-lg-6">
+        <img  src="./img/Tatahome/Unlocksynergies/Artboard 5.webp" alt="">
+        <img class="mt-6" src="./img/Tatahome/Unlocksynergies/Artboard 6.webp" alt="">
+    </div>
+</div>
+<div class="row p-4 w-100">
+  <img class="img-fluid" src="./img/Tatahome/Unlocksynergies/Screenshot 2024-05-27 at 10.34.32 AM.png" alt="">
+  <img src="./img/Tatahome/Unlocksynergies/Artboard 7.webp" alt="" class="img-fluid my-4">
+</div>
+<div class="row p-4 w-100 justify-content-center">
+  <div class="col-sm-12 col-lg-6">
+    <h3 class="blue-heading">MORE STORES, EXCLUSIVE EXPERIENCE</h3>
+    <p class="normal-text-container">We ventured into Tier 2 cities, tailoring our food menu to feature regional delicacies, like Pindi Chole Pocket, Bhopali Chicken Korma Wrap, Pepper Chicken Wrap, and Kosha Mangsho Wrap, offering a contemporary twist on local flavours.</p>
+  </div>
+  <div class="col-lg-6 col-sm-12 d-flex justify-content-center">
+    <img class="img-fluid" src="./img/Tatahome/Unlocksynergies/Artboard 8.webp" alt="">
+  </div>
+ 
+</div>
+<div class="row p-4 w-100">
+  <div class="col-lg-6 col-sm-12">
+    <h3 class="blue-heading-dark">OPENING ICONIC STORES ACROSS INDIA</h3>
+    <div class="data-container w-75 my-2">
+      <div class="small-gradient-line-square"></div>
+      <div class="gradient-line"> </div>
+      <div class="data">421</div>
+      <div class="gradient-line"> </div>
+      <div class="normal-text">Stores</div>
+  </div>
+    <div class="data-container w-75 my-2 ">
+      <div class="small-gradient-line-square"></div>
+      <div class="gradient-line"> </div>
+      <div class="data">61</div>
+      <div class="gradient-line"> </div>
+      <div class="normal-text">Cities</div>
+  </div>
+    <div class="data-container w-75 my-2">
+      <div class="small-gradient-line-square"></div>
+      <div class="gradient-line"> </div>
+      <div class="data">95</div>
+      <div class="gradient-line"> </div>
+      <div class="normal-text">New stores opened in FY 2023-24</div>
+  </div>
+    <div class="data-container w-75 my-2">
+      <div class="small-gradient-line-square"></div>
+      <div class="gradient-line"> </div>
+      <div class="data">Highest ever</div>
+      <div class="gradient-line"> </div>
+      <div class="normal-text">New stores opened in a year <br> since inception</div>
+  </div>
+  </div>
+  <div class="col-lg-6 col-sm-12 ">
+    <img src="./img/Tatahome/Unlocksynergies/Artboard 9.webp" alt="" class="img-fluid"></img>
+    <img src="./img/Tatahome/Unlocksynergies/Artboard 10.webp" alt="" class="img-fluid"></img>
+  </div>
+</div>
+<div class="row p-4 w-100">
+  <div class="col-lg-4 col-sm-12">
+    <img src="./img/Tatahome/Unlocksynergies/Artboard 11.webp" alt="" class="img-fluid">
+    </div>
+  <div class="col-lg-4 col-sm-12 ">
+    <img src="./img/Tatahome/Unlocksynergies/Artboard 12.webp" alt="" class="img-fluid"></img>
+  </div>
+  <div class="col-lg-4 col-sm-12 ">
+    <img src="./img/Tatahome/Unlocksynergies/Artboard 13.webp" alt="" class="img-fluid"></img>
+  </div>
+  <div class="col-lg-12 greyesh-background my-4">
+    <p class="normal-text-container p-4">Highlighting our commitment to coffee innovation, we launched the exclusive “Starbucks ReserveTM Knob Creek® Whiskey Barrel-Aged Guatemala Cold Brew” at the Starbucks Fort Reserve store, a first-of-its-kind offering in India that quickly sold out.</p>
+    <img  src="./img/Tatahome/Unlocksynergies/Artboard 14.webp" alt="" class="img-fluid w-75 m-auto">
+  </div>
+  <div class="col-lg-6 col-sm-12">
+    <p class="normal-text-container p-5 m-auto">Following a successful pilot last year, we expanded our beverage offerings to include locally-familiar beverages, such as Elaichi Chai, Masala Chai, Filter Coffee, and milkshakes, catering especially to younger consumers.</p>
+    <img src="./img/Tatahome/Unlocksynergies/Artboard 18.webp" alt="" class="img-fluid w-75 m-auto">
+  </div>
+  <div class="col-lg-6 col-sm-12">
+    <p class="normal-text-container p-5 m-auto">Additionally, we introduced the Starbucks Refreshers to the Indian market, a globally popular, fun lifestyle beverage enriched with green coffee extract, appealing to the Gen Z demographic at the start of summer.</p>
+    <img src="./img/Tatahome/Unlocksynergies/Artboard 18.webp" alt="" class="img-fluid w-75 m-auto">
+  </div>
+</div>
+<div class="row p-4 w-100 ">
+  <div class="col-lg-6 col-sm-12">
+    <h3 class="blue-heading">CONSUMER REACH AND ENGAGEMENT</h3>
+    <p class="normal-text-container">To drive familiarity among consumer segments, create more occasions for consumer visits, and expand our consideration set among different customer types, we collaborated with Netflix Archies and Manish Malhotra.</p>
+  </div>
+  <div class="col-lg-6 col-sm-12">
+    <div class="data-container w-75 m-auto">
+      <div class="small-gradient-line-square"></div>
+      <div class="gradient-line"> </div>
+      <div class="data">3 Mn</div>
+      <div class="gradient-line"> </div>
+      <div class="normal-text">Starbucks ® Rewards loyalty <br> programme members</div>
+  </div>
+  </div>
+  <div class="col-lg-6 col-sm-12">
+    <h3 class="blue-heading-dark">NETFLIX’S THE ARCHIES + STARBUCKS</h3>
+    <p class="normal-text-container">We collaborated with Netflix’s Archies in November to resonate more deeply with millennials and Gen Z by celebrating friendship and togetherness. This collaboration was brought to life through a dynamic campaign featuring ‘The Archies’ film cast and themed special edition beverages, supported by a comprehensive 360-degree promotion including photo booths, influencer partnerships, and extensive trade and digital marketing.</p>
+  <img class="image-fluid w-75 m-auto" src="./img/Tatahome/Unlocksynergies/Artboard 17.webp" alt="">
+  </div>
+  <div class="col-lg-6 col-sm-12">
+    <h3 class="blue-heading-dark">MANISH MALHOTRA + STARBUCKS</h3>
+    <p class="normal-text-container">Starbucks and renowned designer Manish Malhotra launched an exclusive line of lifestyle drinkware in
+      India. This limited edition collection, inspired by intricate Kashmiri motifs, blends coffee culture with art, fashion, and traditional craftsmanship. The range, including stoneware ceramic mugs, stainless steel tumblers and eco-friendly cups, brings a touch of elegance to the coffee experience, creating a unique fusion of global aesthetics and local heritage.</p>
+      <img class="image-fluid w-75 m-auto" src="./img/Tatahome/Unlocksynergies/Artboard 16.webp" alt="">
+    </div>
+    <div class="col-12 greyesh-background">
+      <div class="row p-3">
+        <div class="col-sm-12 col-lg-6 mt-3">
+          <p class="normal-text-container">Our commitment to fostering an inclusive workplace received external recognition. We were named one of ‘India’s Best Workplaces for Women’ by the Great Place to Work Institute. In collaboration with The Starbucks Foundation, we are also empowering young women
+            by providing vocational skills training in the F&B retail industry. This initiative was aimed at training 2,000 women by 2024, by offering on-the-job learning opportunities in our stores across Bengaluru, Chennai, Delhi, Hyderabad, and Mumbai.</p>
+        </div>
+        <div class="col-sm-12 col-lg-6">
+          <img src="./img/Tatahome/Unlocksynergies/Artboard 30 copy.webp" alt="" class="img-fluid">
+          </div>
+      </div>
+    </div>
+</div>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-md-square btn-primary rounded-circle back-to-top"
+      ><i class="fa fa-arrow-up"></i
+    ></a>
+    <!-- Back to Top -->
+    <div class="right-container">
+      <button
+        class="right-container-button d-flex justify-content-center align-items-center"
+      >
+        <span class="short-text">
+          <svg
+            id="icon-chat"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+            viewBox="0 0 256 256"
+            xml:space="preserve"
+          >
+            <defs></defs>
+            <g
+              style="
+                stroke: none;
+                stroke-width: 0;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: none;
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+            >
+              <path
+                d="M 87.994 0 H 69.342 c -1.787 0 -2.682 2.16 -1.418 3.424 l 5.795 5.795 l -33.82 33.82 L 28.056 31.196 l -3.174 -3.174 c -1.074 -1.074 -2.815 -1.074 -3.889 0 L 0.805 48.209 c -1.074 1.074 -1.074 2.815 0 3.889 l 3.174 3.174 c 1.074 1.074 2.815 1.074 3.889 0 l 15.069 -15.069 l 14.994 14.994 c 1.074 1.074 2.815 1.074 3.889 0 l 1.614 -1.614 c 0.083 -0.066 0.17 -0.125 0.247 -0.202 l 37.1 -37.1 l 5.795 5.795 C 87.84 23.34 90 22.445 90 20.658 V 2.006 C 90 0.898 89.102 0 87.994 0 z"
+                style="
+                  stroke: none;
+                  stroke-width: 1;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: rgb(0, 0, 0);
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+                stroke-linecap="round"
+              />
+              <path
+                d="M 65.626 37.8 v 49.45 c 0 1.519 1.231 2.75 2.75 2.75 h 8.782 c 1.519 0 2.75 -1.231 2.75 -2.75 V 23.518 L 65.626 37.8 z"
+                style="
+                  stroke: none;
+                  stroke-width: 1;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: rgb(0, 0, 0);
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+                stroke-linecap="round"
+              />
+              <path
+                d="M 47.115 56.312 V 87.25 c 0 1.519 1.231 2.75 2.75 2.75 h 8.782 c 1.519 0 2.75 -1.231 2.75 -2.75 V 42.03 L 47.115 56.312 z"
+                style="
+                  stroke: none;
+                  stroke-width: 1;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: rgb(0, 0, 0);
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+                stroke-linecap="round"
+              />
+              <path
+                d="M 39.876 60.503 c -1.937 0 -3.757 -0.754 -5.127 -2.124 l -6.146 -6.145 V 87.25 c 0 1.519 1.231 2.75 2.75 2.75 h 8.782 c 1.519 0 2.75 -1.231 2.75 -2.75 V 59.844 C 41.952 60.271 40.933 60.503 39.876 60.503 z"
+                style="
+                  stroke: none;
+                  stroke-width: 1;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: rgb(0, 0, 0);
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+                stroke-linecap="round"
+              />
+              <path
+                d="M 22.937 46.567 L 11.051 58.453 c -0.298 0.298 -0.621 0.562 -0.959 0.8 V 87.25 c 0 1.519 1.231 2.75 2.75 2.75 h 8.782 c 1.519 0 2.75 -1.231 2.75 -2.75 V 48.004 L 22.937 46.567 z"
+                style="
+                  stroke: none;
+                  stroke-width: 1;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: rgb(0, 0, 0);
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+                stroke-linecap="round"
+              />
+            </g>
+          </svg>
+        </span>
+        <span class="long-text" style="">View Chart</span>
+      </button>
+    </div>
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright bg-dark py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <span class="text-light"
+              ><a href="#"
+                ><i class="fas fa-copyright text-light me-2"></i>Tata Consumers </a
+              >, All right reserved.</span
+            >
+          </div>
+          <div class="col-md-6 my-auto text-center text-md-end text-white">
+            Designed and Devloped By
+            <a class="border-bottom" href="https://htmlcodex.com">K&A</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright End -->
+    <script src="https://assets.codepen.io/573855/lr-codepen-utils.js?v=30"></script>
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js?v=3.12"></script>
+    <!-- <script src="https://assets.codepen.io/16327/ScrollSmoother.min.js?v=3.12"></script> -->
+    <script src="https://assets.codepen.io/573855/swiper.min.js"></script>
+    <script src="./js/Gsap.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -4,7 +4,7 @@
 // utils at: https://assets.codepen.io/573855/lr-codepen-utils.js
 
 /* GSAP Plugins Registration */
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+gsap.registerPlugin(ScrollTrigger);
 
 /* ScrollTrigger Configuration */
 // Configures ScrollTrigger for optimized performance and mobile responsiveness

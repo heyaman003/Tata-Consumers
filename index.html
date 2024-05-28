@@ -39,20 +39,20 @@
 
 
         <!-- Navbar start -->
-        <div class="container-fluid nav-bar">
+        <div class="container-fluid nav-bar d-flex justify-content-center align-item-center">
             <div class="container">
                 <nav class="navbar navbar-light navbar-expand-lg py-4">
-                   <img width="250px" height="40px" src="./img/Tatahome/Logo.svg" alt="">
+                  <a href="https://www.tataconsumer.com/"><img width="250px" height="40px" src="./img/Tatahome/Logo.svg" alt=""></a> 
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-primary"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <div class="navbar-nav mx-auto">
                             <a href="index.html" class="nav-item nav-link active">Home</a>
-                            <a href="about.html" class="nav-item nav-link">Perfomance Review</a>
-                            <a href="service.html" class="nav-item nav-link">  Strategy</a>
-                            <a href="event.html" class="nav-item nav-link">Sustainability </a>
-                            <a href="menu.html" class="nav-item nav-link"> Governance </a>
+                            <a href="PerfomanceReview.html" class="nav-item nav-link">Perfomance Review</a>
+                            <a href="Strategy.html" class="nav-item nav-link">  Strategy</a>
+                            <a href="Sustanability.html" class="nav-item nav-link">Sustainability </a>
+                            <a href="Governance.html" class="nav-item nav-link"> Governance </a>
                             <!-- <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                                 <div class="dropdown-menu bg-light">
@@ -66,10 +66,23 @@
                             <!-- <a href="contact.html" class="nav-item nav-link">Contact</a> -->
                         </div>
                         <!-- <button class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas a-bars"></i></button> -->
-                        <a href="" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Menu</a>
+                        <svg class="hb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" stroke="#eee" stroke-width=".6" fill="rgba(0,0,0,0)" stroke-linecap="round" style="cursor: pointer">
+                            <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
+                              <animate dur="0.2s" attributeName="d" values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7" fill="freeze" begin="start.begin" />
+                              <animate dur="0.2s" attributeName="d" values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7" fill="freeze" begin="reverse.begin" />
+                            </path>
+                            <rect width="10" height="10" stroke="none">
+                              <animate dur="2s" id="reverse" attributeName="width" begin="click" />
+                            </rect>
+                            <rect width="10" height="10" stroke="none">
+                              <animate dur="0.001s" id="start" attributeName="width" values="10;0" fill="freeze" begin="click" />
+                              <animate dur="0.001s" attributeName="width" values="0;10" fill="freeze" begin="reverse.begin" />
+                            </rect>
+                          </svg>
                     </div>
                 </nav>
             </div>
+            <div class="logo-parent d-flex  align-item-center"> <a href="https://www.tata.com/"><img src="./img/Tatahome/tata-Logo.png" alt=""></a></div>
         </div>
         <!-- Navbar End -->
 
@@ -841,6 +854,48 @@
         </div>
         <!-- Team End -->
 
+        <div class="flex flex-column-w-100 justify-content-center align-item-center flex-column">
+            <div class="title text-center">
+                <h1>Our market presence</h1>
+            <div class="world-map">
+        
+                <div class="pin-usa">
+                    <img class="icon" src="./img/Tatahome/Map/MapIcon.svg" alt="Icon">
+                    <span><img src="./img/Tatahome/MapContent/Artboard 7Govern.svg" alt=""></span>
+                </div>
+                <div class="pin-canada">
+                    <img class="icon" src="./img/Tatahome/Map/MapIcon.svg" alt="Icon">
+                    <span>CANADA<img src="./img/Tatahome/MapContent/Artboard 8Govern.svg" alt=""></span>
+                </div>
+                <div class="pin-uk">
+                    <img class="icon" src="./img/Tatahome/Map/MapIcon.svg" alt="Icon">
+                    <span>UK<img src="./img/Tatahome/MapContent/Artboard 9Govern.svg" alt=""></span>
+                </div>
+                <div class="pin-europe">
+                    <img class="icon" src="./img/Tatahome/MapContent/Artboard 8Govern.svg" alt="Icon">
+                    <span>EUROPE</span>
+                </div>
+                <div class="pin-middle-East">
+                    <img class="icon" src="./img/Tatahome/Map/MapIcon.svg" alt="Icon">
+                    <span><img src="./img/Tatahome/MapContent/Artboard 3Govern.svg" alt=""></span>
+                </div>
+                <div class="pin-india">
+                    <img class="icon" src="./img/Tatahome/Map/MapIcon.svg" alt="Icon">
+                    <span><img src="./img/Tatahome/MapContent/Artboard 6Govern.svg" alt=""></span>
+                </div>
+                <div class="pin-south-Africa">
+                    <img class="icon" src="./img/Tatahome/Map/MapIcon.svg" alt="Icon">
+                    <span><img src="./img/Tatahome/MapContent/Artboard 5Govern.svg" alt=""></span>
+                </div>
+                <div class="pin-australia">
+                    <img class="icon" src="./img/Tatahome/Map/MapIcon.svg" alt="Icon">
+                    <span><img src="./img/Tatahome/MapContent/Artboard 4Govern.svg" alt=""></span>
+                </div>
+        
+                <img class="map-img" src="./img/Tatahome/Map/map.svg" alt="map">
+            </div>
+        </div>
+        
 
         <!-- Testimonial Start -->
         <div class="container-fluid py-6">
@@ -1244,7 +1299,7 @@
             </div>
         </div> -->
         <!-- Footer End -->
-
+        
 
         <!-- Copyright Start -->
         <div class="container-fluid copyright bg-dark py-4">
@@ -1267,6 +1322,7 @@
         <!-- Back to Top -->
         <div class="right-container">
             <button class="right-container-button d-flex justify-content-center align-items-center"><span class="short-text">
+               <a href="./FinincalChart.html">
                 <svg id="icon-chat" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  viewBox="0 0 256 256" xml:space="preserve">
 
                     <defs>
@@ -1280,7 +1336,9 @@
                     </g>
                     </svg>
                   </span> <span class="long-text" style="">View Chart</span>
-              </button>
+               </a>
+               
+               </button>
         </div>
              
 

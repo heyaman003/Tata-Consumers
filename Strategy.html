@@ -43,15 +43,18 @@
   </head>
   <body>
     <!-- Navbar start -->
-    <div class="container-fluid nav-bar">
+    <div
+      class="container-fluid nav-bar d-flex justify-content-center align-item-center"
+    >
       <div class="container">
         <nav class="navbar navbar-light navbar-expand-lg py-4">
-          <img
-            width="250px"
-            height="40px"
-            src="./img/Tatahome/Logo.svg"
-            alt=""
-          />
+          <a href="https://www.tataconsumer.com/"
+            ><img
+              width="250px"
+              height="40px"
+              src="./img/Tatahome/Logo.svg"
+              alt=""
+          /></a>
           <button
             class="navbar-toggler py-2 px-3"
             type="button"
@@ -62,33 +65,91 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-auto">
-              <a href="index.html" class="nav-item nav-link active">Home</a>
-              <a href="about.html" class="nav-item nav-link"
+              <a href="index.html" class="nav-item nav-link">Home</a>
+              <a href="PerfomanceReview.html" class="nav-item nav-link"
                 >Perfomance Review</a
               >
-              <a href="service.html" class="nav-item nav-link"> Strategy</a>
-              <a href="event.html" class="nav-item nav-link">Sustainability </a>
-              <a href="menu.html" class="nav-item nav-link"> Governance </a>
+              <a href="Strategy.html" class="nav-item nav-link active">
+                Strategy</a
+              >
+              <a href="Sustanability.html" class="nav-item nav-link"
+                >Sustainability
+              </a>
+              <a href="Governance.html" class="nav-item nav-link">
+                Governance
+              </a>
               <!-- <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu bg-light">
-                            <a href="book.html" class="dropdown-item">Booking</a>
-                            <a href="blog.html" class="dropdown-item">Our Blog</a>
-                            <a href="team.html" class="dropdown-item">Our Team</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            <a href="404.html" class="dropdown-item">404 Page</a>
-                        </div>
-                    </div> -->
+                          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                          <div class="dropdown-menu bg-light">
+                              <a href="book.html" class="dropdown-item">Booking</a>
+                              <a href="blog.html" class="dropdown-item">Our Blog</a>
+                              <a href="team.html" class="dropdown-item">Our Team</a>
+                              <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                              <a href="404.html" class="dropdown-item">404 Page</a>
+                          </div>
+                      </div> -->
               <!-- <a href="contact.html" class="nav-item nav-link">Contact</a> -->
             </div>
             <!-- <button class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas a-bars"></i></button> -->
-            <a
-              href=""
-              class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill"
-              >Menu</a
+            <svg
+              class="hb"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 10 10"
+              stroke="#eee"
+              stroke-width=".6"
+              fill="rgba(0,0,0,0)"
+              stroke-linecap="round"
+              style="cursor: pointer"
             >
+              <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
+                <animate
+                  dur="0.2s"
+                  attributeName="d"
+                  values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7"
+                  fill="freeze"
+                  begin="start.begin"
+                />
+                <animate
+                  dur="0.2s"
+                  attributeName="d"
+                  values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7"
+                  fill="freeze"
+                  begin="reverse.begin"
+                />
+              </path>
+              <rect width="10" height="10" stroke="none">
+                <animate
+                  dur="2s"
+                  id="reverse"
+                  attributeName="width"
+                  begin="click"
+                />
+              </rect>
+              <rect width="10" height="10" stroke="none">
+                <animate
+                  dur="0.001s"
+                  id="start"
+                  attributeName="width"
+                  values="10;0"
+                  fill="freeze"
+                  begin="click"
+                />
+                <animate
+                  dur="0.001s"
+                  attributeName="width"
+                  values="0;10"
+                  fill="freeze"
+                  begin="reverse.begin"
+                />
+              </rect>
+            </svg>
           </div>
         </nav>
+      </div>
+      <div class="logo-parent d-flex align-item-center">
+        <a href="https://www.tata.com/"
+          ><img src="./img/Tatahome/tata-Logo.png" alt=""
+        /></a>
       </div>
     </div>
     <!-- Navbar End -->
@@ -98,11 +159,9 @@
         <main class="main-content">
           <div class="dummy-block">
             <div
-              class="text-container w-100  d-flex flex-column justify-content-end align-items-start hero-section-digital"
+              class="text-container w-100 d-flex flex-column justify-content-end align-items-start hero-section-digital"
             >
-            <h1 class="textstartgey" data-fill-text="Strategy">
-              Strategy
-          </h1>
+              <h1 class="textstartgey" data-fill-text="Strategy">Strategy</h1>
             </div>
           </div>
 
@@ -110,12 +169,6 @@
             <div class="containe-xyz">
               <!-- Wrapper Start -->
               <div class="wrapper wrapper-full">
-                <!-- <div class="text-before-wrapper">
-                  <div class="text-container">
-                    <h2>Table of content</h2>
-                  </div>
-                </div> -->
-
                 <div class="swiper-container" data-swiper="preview">
                   <div class="swiper-column-gap"></div>
 
@@ -125,19 +178,33 @@
                       <div class="card-container">
                         <!-- Image Start -->
                         <div class="stack-container media-container">
-                          <img src="./img/Tatahome/Strategy/shutterstock_1430075534.jpg" alt="">
-                          </div>
+                          <img
+                            src="./img/Tatahome/Strategy/shutterstock_1430075534.jpg"
+                            alt=""
+                          />
+                        </div>
                         <!-- Image End -->
 
                         <div class="text-container card-text-content">
-                          <h3 class="title">Strengthen and accelerate core business</h3>
+                          <h3 class="title">
+                            Strengthen and accelerate core business
+                          </h3>
                           <p>
-                            We remained committed to investing in our
-                          brands, expanding our sales & distribution and accelerating the growth momentum of our core business—tea, coffee and salt. During the year, we enriched our portfolio, leveraged key consumer trends, launched impactful campaigns and achieved significant milestones in our sales & distribution roadmap.
+                            We remained committed to investing in our brands,
+                            expanding our sales & distribution and accelerating
+                            the growth momentum of our core business—tea, coffee
+                            and salt. During the year, we enriched our
+                            portfolio, leveraged key consumer trends, launched
+                            impactful campaigns and achieved significant
+                            milestones in our sales & distribution roadmap.
                           </p>
-                          <div class=" mt-3 ml-2">
-                            <a  href='./Teams.html' class="btn btn-primary py-3 px-5 rounded-pill">Read more<i class="fas fa-arrow-right ps-2"></i></a>
-                        </div>
+                          <div class="mt-3 ml-2">
+                            <a
+                              href="./StrengthenAndAccelerateCore.html"
+                              class="btn btn-primary py-3 px-5 rounded-pill"
+                              >Read more<i class="fas fa-arrow-right ps-2"></i
+                            ></a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -148,21 +215,32 @@
                       <div class="card-container">
                         <!-- Image Start -->
                         <div class="stack-container media-container">
-                         <img src="./img/Tatahome/Strategy/shutterstock_2149634653.jpg" alt="">
+                          <img
+                            src="./img/Tatahome/Strategy/DriveAndDigital.jpg"
+                            alt=""
+                          />
                         </div>
                         <!-- Image End -->
 
                         <div class="text-container card-text-content">
                           <h3 class="title">Drive digital and innovation</h3>
                           <p>
-                            During the year, we leveraged the power
-of Digital to enable transformation across the organisation. Our digital ecosystem helped us
-make better procurement decisions, built an agile
-and responsive sales and distribution platform and created better consumer experiences. We continued to accelerate our innovation agenda, entering new categories and building future-ready capabilities.
+                            During the year, we leveraged the power of Digital
+                            to enable transformation across the organisation.
+                            Our digital ecosystem helped us make better
+                            procurement decisions, built an agile and responsive
+                            sales and distribution platform and created better
+                            consumer experiences. We continued to accelerate our
+                            innovation agenda, entering new categories and
+                            building future-ready capabilities.
                           </p>
-                          <div class=" mt-3 ml-2">
-                            <a  href='./Teams.html' class="btn btn-primary py-3 px-5 rounded-pill">Read more<i class="fas fa-arrow-right ps-2"></i></a>
-                        </div>
+                          <div class="mt-3 ml-2">
+                            <a
+                              href="./DriveDigitalAndInnovation.html"
+                              class="btn btn-primary py-3 px-5 rounded-pill"
+                              >Read more<i class="fas fa-arrow-right ps-2"></i
+                            ></a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -173,19 +251,30 @@ and responsive sales and distribution platform and created better consumer exper
                       <div class="card-container">
                         <!-- Image Start -->
                         <div class="stack-container media-container">
-                         <img src="./img/Tatahome/Strategy/shutterstock_1530452789.jpg" alt="">
+                          <img
+                            src="./img/Tatahome/Strategy/shutterstock_1530452789.jpg"
+                            alt=""
+                          />
                         </div>
                         <!-- Image End -->
 
                         <div class="text-container card-text-content">
                           <h3 class="title">Unlock synergies</h3>
                           <p>
-                            At Tata Consumer, we have created an integration playbook with protocols
-                            in place to ensure speedy, seamless and efficient integration of newly acquired businesses. This has resulted in significant value unlocking while accelerating the scaling up of the businesses that we have acquired.
+                            At Tata Consumer, we have created an integration
+                            playbook with protocols in place to ensure speedy,
+                            seamless and efficient integration of newly acquired
+                            businesses. This has resulted in significant value
+                            unlocking while accelerating the scaling up of the
+                            businesses that we have acquired.
                           </p>
-                          <div class=" mt-3 ml-2">
-                            <a  href='./Teams.html' class="btn btn-primary py-3 px-5 rounded-pill">Read more<i class="fas fa-arrow-right ps-2"></i></a>
-                        </div>
+                          <div class="mt-3 ml-2">
+                            <a
+                              href="./UnlockSynergies.html"
+                              class="btn btn-primary py-3 px-5 rounded-pill"
+                              >Read more<i class="fas fa-arrow-right ps-2"></i
+                            ></a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -196,18 +285,31 @@ and responsive sales and distribution platform and created better consumer exper
                       <div class="card-container">
                         <!-- Image Start -->
                         <div class="stack-container media-container">
-                          <img src="./img/Tatahome/Strategy/shutterstock_1120010708.jpg" alt="">
+                          <img
+                            src="./img/Tatahome/Strategy/shutterstock_1120010708.jpg"
+                            alt=""
+                          />
                         </div>
                         <!-- Image End -->
 
                         <div class="text-container card-text-content">
                           <h3 class="title">Explore new opportunities</h3>
                           <p>
-                            We continued to explore new opportunities through both organic and inorganic routes. We expanded our portfolio, entered new categories and widened our horizons. In line with the focus areas identified in food & beverages, we accelerated our growth momentum, offering distinctive value to consumers and creating an agile and consumer centric business.
+                            We continued to explore new opportunities through
+                            both organic and inorganic routes. We expanded our
+                            portfolio, entered new categories and widened our
+                            horizons. In line with the focus areas identified in
+                            food & beverages, we accelerated our growth
+                            momentum, offering distinctive value to consumers
+                            and creating an agile and consumer centric business.
                           </p>
-                          <div class=" mt-3 ml-2">
-                            <a  href='./Teams.html' class="btn btn-primary py-3 px-5 rounded-pill">Read more<i class="fas fa-arrow-right ps-2"></i></a>
-                        </div>
+                          <div class="mt-3 ml-2">
+                            <a
+                              href="./ExploreNewOppeortunities.html"
+                              class="btn btn-primary py-3 px-5 rounded-pill"
+                              >Read more<i class="fas fa-arrow-right ps-2"></i
+                            ></a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -218,19 +320,35 @@ and responsive sales and distribution platform and created better consumer exper
                       <div class="card-container">
                         <!-- Image Start -->
                         <div class="stack-container media-container">
-                          <img src="./img/Tatahome/Strategy/IMG7768.jpg" alt="">
+                          <img
+                            src="./img/Tatahome/Strategy/IMG7768.jpg"
+                            alt=""
+                          />
                         </div>
                         <!-- Image End -->
 
                         <div class="text-container card-text-content">
-                          <h3 class="title">Create a future-ready organisation</h3>
+                          <h3 class="title">
+                            Create a future-ready organisation
+                          </h3>
                           <p>
-                            Given the dynamic nature of our business and the FMCG sector, we recognised the need to constantly adapt
-                            to current and emerging challenges, even as we stayed true to our core values. In order to develop ‘fit for future’ capabilities, we focused on initiatives geared to help all our People thrive and grow, in an inclusive environment, where they were provided with a range of learning opportunities and initiatives for ensuring their well being.
+                            Given the dynamic nature of our business and the
+                            FMCG sector, we recognised the need to constantly
+                            adapt to current and emerging challenges, even as we
+                            stayed true to our core values. In order to develop
+                            ‘fit for future’ capabilities, we focused on
+                            initiatives geared to help all our People thrive and
+                            grow, in an inclusive environment, where they were
+                            provided with a range of learning opportunities and
+                            initiatives for ensuring their well being.
                           </p>
-                          <div class=" mt-3 ml-2">
-                            <a  href='./Teams.html' class="btn btn-primary py-3 px-5 rounded-pill">Read more<i class="fas fa-arrow-right ps-2"></i></a>
-                        </div>
+                          <div class="mt-3 ml-2">
+                            <a
+                              href="./FutureReadyOrganisation.html"
+                              class="btn btn-primary py-3 px-5 rounded-pill"
+                              >Read more<i class="fas fa-arrow-right ps-2"></i
+                            ></a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -241,20 +359,30 @@ and responsive sales and distribution platform and created better consumer exper
                       <div class="card-container">
                         <!-- Image Start -->
                         <div class="stack-container media-container">
-                          <img src="./img/Tatahome/Strategy/iStock-1248915720.jpg" alt="">
+                          <img
+                            src="./img/Tatahome/Strategy/iStock-1248915720.jpg"
+                            alt=""
+                          />
                         </div>
                         <!-- Image End -->
 
                         <div class="text-container card-text-content">
                           <h3 class="title">Embed Sustainability</h3>
                           <p>
-                            At Tata Consumer Products, ‘Embed Sustainability’ has
-been identified as a key strategic pillars for long- term success. We offer our customers better nutrition choices through a range
-of products produced sustainably, backed by our purpose #For Better Living.
+                            At Tata Consumer Products, ‘Embed Sustainability’
+                            has been identified as a key strategic pillars for
+                            long- term success. We offer our customers better
+                            nutrition choices through a range of products
+                            produced sustainably, backed by our purpose #For
+                            Better Living.
                           </p>
-                          <div class=" mt-3 ml-2">
-                            <a  href='./Teams.html' class="btn btn-primary py-3 px-5 rounded-pill">Read more<i class="fas fa-arrow-right ps-2"></i></a>
-                        </div>
+                          <div class="mt-3 ml-2">
+                            <a
+                              href="./Strategy-Embedsustainability.html"
+                              class="btn btn-primary py-3 px-5 rounded-pill"
+                              >Read more<i class="fas fa-arrow-right ps-2"></i
+                            ></a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -300,11 +428,6 @@ of products produced sustainably, backed by our purpose #For Better Living.
               <!-- Wrapper End -->
             </div>
           </div>
-
-
-          
-
-       
 
           <!-- <div class="dummy-block">
             <div class="text-container">
@@ -456,7 +579,6 @@ of products produced sustainably, backed by our purpose #For Better Living.
     <script src="https://assets.codepen.io/573855/lr-codepen-utils.js?v=30"></script>
     <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
     <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js?v=3.12"></script>
-    <script src="https://assets.codepen.io/16327/ScrollSmoother.min.js?v=3.12"></script>
     <script src="https://assets.codepen.io/573855/swiper.min.js"></script>
     <script src="./js/Gsap.js"></script>
     <script src="js/main.js"></script>
